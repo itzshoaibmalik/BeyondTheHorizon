@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Beyond The Horizon</title>
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  <header class="header" data-header>
+    <div class="overlay" data-overlay></div>
+
+    <div class="header-top">
+      <div class="container">
+        <a href="tel:+01123456790" class="helpline-box">
+          <div class="icon-box">
+            <ion-icon name="call-outline"></ion-icon>
+          </div>
+          <div class="wrapper">
+            <p class="helpline-title">For Further Inquires :</p>
+            <p class="helpline-number">+01 (123) 4567 90</p>
+          </div>
+        </a>
+
+        <a href="index.html" class="logo">
+          <img src="./favicon.svg" alt="Tourly logo">
+        </a>
+
+        <div class="header-btn-group">
+          <button class="search-btn" aria-label="Search" data-search-open>
+            <ion-icon name="search"></ion-icon>
+          </button>
+          <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-bottom">
+      <div class="container">
+        <ul class="social-list">
+          <li><a href="#" class="social-link"><ion-icon name="logo-facebook"></ion-icon></a></li>
+          <li><a href="#" class="social-link"><ion-icon name="logo-twitter"></ion-icon></a></li>
+          <li><a href="#" class="social-link"><ion-icon name="logo-youtube"></ion-icon></a></li>
+        </ul>
+
+        <nav class="navbar" data-navbar>
+          <div class="navbar-top">
+            <a href="#" class="logo"><img src="./favicon.svg" alt="Tourly logo"></a>
+            <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+          </div>
+          <ul class="navbar-list">
+            <li><a href="index.html" class="navbar-link" data-nav-link>home</a></li>
+            <li><a href="about.html" class="navbar-link active" data-nav-link>about us</a></li>
+            <li><a href="destinations.html" class="navbar-link" data-nav-link>destinations</a></li>
+            <li><a href="packages.html" class="navbar-link" data-nav-link>packages</a></li>
+            <li><a href="gallery.html" class="navbar-link" data-nav-link>gallery</a></li>
+            <li><a href="contact.html" class="navbar-link" data-nav-link>contact us</a></li>
+            <li><a href="login.html" class="navbar-link" data-nav-link>login</a></li>
+          </ul>
+        </nav>
+
+        <button class="btn btn-primary">Book Now</button>
+      </div>
+    </div>
+  </header>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <style>
+    body {
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #e3eafc 0%, #f8fafc 100%);
+      font-family: 'Roboto', 'Montserrat', Arial, sans-serif;
+    }
+
+    .about-container {
+      max-width: 700px;
+      margin: 60px auto 0 auto;
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 24px;
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.10);
+      padding: 48px 36px 36px 36px;
+      text-align: center;
+    }
+
+    .about-container h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.5rem;
+      color: #1a2a4f;
+      margin-bottom: 18px;
+      letter-spacing: 1px;
+    }
+
+    .about-container p {
+      color: #2a4d8f;
+      font-size: 1.1rem;
+      margin-bottom: 32px;
+    }
+
+    .team-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 32px;
+      margin-top: 24px;
+    }
+
+    .team-member {
+      background: #f4f8ff;
+      border-radius: 16px;
+      box-shadow: 0 2px 8px rgba(33, 150, 243, 0.08);
+      padding: 24px 20px 18px 20px;
+      min-width: 180px;
+      flex: 1 1 180px;
+      max-width: 220px;
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+
+    .team-member:hover {
+      box-shadow: 0 8px 24px rgba(33, 150, 243, 0.13);
+      transform: translateY(-4px) scale(1.03);
+    }
+
+    .team-member h3 {
+      font-family: 'Montserrat', sans-serif;
+      color: #16305a;
+      font-size: 1.2rem;
+      margin-bottom: 6px;
+      margin-top: 0;
+    }
+
+    .team-member span {
+      color: #2a4d8f;
+      font-size: 0.98rem;
+      font-weight: 500;
+    }
+
+    .about-back {
+      display: inline-block;
+      margin-top: 32px;
+      color: #2a4d8f;
+      text-decoration: underline;
+      font-size: 15px;
+      font-weight: 500;
+      letter-spacing: 0.2px;
+    }
+  </style>
+  <div class="about-bg-animated"></div>
+  <div class="about-container fade-in glass-effect">
+    <h1>About Us</h1>
+    <p>
+      Welcome to <b>Beyond The Horizon</b>! We are a passionate team dedicated to creating memorable travel experiences.
+      Our mission is to help you explore the world with ease, comfort, and excitement.
+    </p>
+    <div class="team-list">
+      <div class="team-member">
+        <img class="avatar-img" src="./assets/images/img8.jpg" alt="Portrait of Shoaib Malik">
+        <h3>Shoaib Malik</h3>
+        <span>Co-Founder & Developer</span>
+        <div class="socials" aria-label="Shoaib Malik social profiles">
+          <a href="#" target="_blank" rel="noopener" aria-label="Shoaib on LinkedIn" title="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM0 8h5v16H0zM8 8h4.8v2.2h.07c.67-1.2 2.3-2.46 4.73-2.46 5.06 0 6 3.33 6 7.66V24h-5v-7.3c0-1.74-.03-3.98-2.43-3.98-2.43 0-2.8 1.9-2.8 3.86V24H8z"/></svg>
+          </a>
+          <a href="#" target="_blank" rel="noopener" aria-label="Shoaib on Twitter" title="Twitter">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 4.56c-.89.39-1.83.65-2.82.77a4.92 4.92 0 0 0 2.16-2.71 9.86 9.86 0 0 1-3.12 1.19 4.92 4.92 0 0 0-8.38 4.49A13.96 13.96 0 0 1 1.67 3.15a4.92 4.92 0 0 0 1.52 6.57 4.86 4.86 0 0 1-2.23-.62v.06c0 2.38 1.69 4.37 3.94 4.82-.41.11-.85.17-1.3.17-.32 0-.63-.03-.93-.09a4.93 4.93 0 0 0 4.6 3.42A9.87 9.87 0 0 1 0 19.54 13.92 13.92 0 0 0 7.55 21.8c9.05 0 14-7.5 14-14l-.02-.64A10.03 10.03 0 0 0 24 4.56z"/></svg>
+          </a>
+          <a href="#" target="_blank" rel="noopener" aria-label="Shoaib on Instagram" title="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.2c3.2 0 3.58.01 4.85.07 1.17.05 1.95.24 2.4.4.6.23 1.02.5 1.47.95.45.45.72.87.95 1.47.16.45.35 1.23.4 2.4.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.24 1.95-.4 2.4a3.92 3.92 0 0 1-.95 1.47 3.92 3.92 0 0 1-1.47.95c-.45.16-1.23.35-2.4.4-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.95-.24-2.4-.4a3.92 3.92 0 0 1-1.47-.95 3.92 3.92 0 0 1-.95-1.47c-.16-.45-.35-1.23-.4-2.4C2.21 15.58 2.2 15.2 2.2 12s.01-3.58.07-4.85c.05-1.17.24-1.95.4-2.4.23-.6.5-1.02.95-1.47.45-.45.87-.72 1.47-.95.45-.16 1.23-.35 2.4-.4C8.42 2.21 8.8 2.2 12 2.2m0-2.2C8.74 0 8.33.01 7.05.07 5.78.13 4.88.33 4.14.6c-.77.3-1.42.7-2.07 1.35A5.4 5.4 0 0 0 .6 4.14c-.27.74-.47 1.64-.53 2.91C.01 8.33 0 8.74 0 12c0 3.26.01 3.67.07 4.95.06 1.27.26 2.17.53 2.91.3.77.7 1.42 1.35 2.07.65.65 1.3 1.05 2.07 1.35.74.27 1.64.47 2.91.53 1.28.06 1.69.07 4.95.07s3.67-.01 4.95-.07c1.27-.06 2.17-.26 2.91-.53.77-.3 1.42-.7 2.07-1.35.65-.65 1.05-1.3 1.35-2.07.27-.74.47-1.64.53-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.17-.53-2.91-.3-.77-.7-1.42-1.35-2.07A5.4 5.4 0 0 0 19.86.6c-.74-.27-1.64-.47-2.91-.53C15.67.01 15.26 0 12 0Z"/><path d="M12 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84Zm0 10.16A4 4 0 1 1 16 12a4 4 0 0 1-4 4Z"/><circle cx="18.4" cy="5.6" r="1.44"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="team-member">
+        <img class="avatar-img" src="./assets/images/img9.jpg" alt="Portrait of Shivani Modi">
+        <h3>Shivani Modi</h3>
+        <span>Co-Founder & Designer</span>
+        <div class="socials" aria-label="Shivani Modi social profiles">
+          <a href="#" target="_blank" rel="noopener" aria-label="Shivani on LinkedIn" title="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM0 8h5v16H0zM8 8h4.8v2.2h.07c.67-1.2 2.3-2.46 4.73-2.46 5.06 0 6 3.33 6 7.66V24h-5v-7.3c0-1.74-.03-3.98-2.43-3.98-2.43 0-2.8 1.9-2.8 3.86V24H8z"/></svg>
+          </a>
+          <a href="#" target="_blank" rel="noopener" aria-label="Shivani on Twitter" title="Twitter">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 4.56c-.89.39-1.83.65-2.82.77a4.92 4.92 0 0 0 2.16-2.71 9.86 9.86 0 0 1-3.12 1.19 4.92 4.92 0 0 0-8.38 4.49A13.96 13.96 0 0 1 1.67 3.15a4.92 4.92 0 0 0 1.52 6.57 4.86 4.86 0 0 1-2.23-.62v.06c0 2.38 1.69 4.37 3.94 4.82-.41.11-.85.17-1.3.17-.32 0-.63-.03-.93-.09a4.93 4.93 0 0 0 4.6 3.42A9.87 9.87 0 0 1 0 19.54 13.92 13.92 0 0 0 7.55 21.8c9.05 0 14-7.5 14-14l-.02-.64A10.03 10.03 0 0 0 24 4.56z"/></svg>
+          </a>
+          <a href="#" target="_blank" rel="noopener" aria-label="Shivani on Dribbble" title="Dribbble">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0a12 12 0 1 0 12 12A12.014 12.014 0 0 0 12 0Zm7.873 6.6a9.7 9.7 0 0 1 1.826 5.58 22.6 22.6 0 0 0-6.74-.223 34.4 34.4 0 0 0-1.14-2.352 23 23 0 0 0 6.054-3.005ZM12 2.3a9.7 9.7 0 0 1 6.078 2.15 20.9 20.9 0 0 1-5.64 2.826A33.3 33.3 0 0 0 9.8 3.152 9.68 9.68 0 0 1 12 2.3ZM8.3 3.9a31.7 31.7 0 0 1 2.47 4.023 21.2 21.2 0 0 1-7.148 1.018A9.75 9.75 0 0 1 8.3 3.9ZM2.3 12a9.7 9.7 0 0 1 .22-2.056 23.5 23.5 0 0 0 8.18-1.082c.29.52.56 1.057.808 1.61-.238.067-.476.14-.714.22-3.1 1.065-5.54 3.22-7.166 6.1A9.7 9.7 0 0 1 2.3 12Zm3.972 7.51c1.4-2.58 3.54-4.38 6.367-5.334.17-.056.34-.11.512-.158.405 1.15.737 2.36.99 3.61a22.3 22.3 0 0 0-7.87 1.882Zm9.41-2.147a25.4 25.4 0 0 0-.983-3.415 20.7 20.7 0 0 1 5.85.177 9.7 9.7 0 0 1-4.867 3.238Z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="team-member">
+        <img class="avatar-img" src="./assets/images/popular-1.jpg" alt="Portrait of Shlok Gupta">
+        <h3>Shlok Gupta</h3>
+        <span>Co-Founder & Marketing</span>
+        <div class="socials" aria-label="Shlok Gupta social profiles">
+          <a href="#" target="_blank" rel="noopener" aria-label="Shlok on LinkedIn" title="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM0 8h5v16H0zM8 8h4.8v2.2h.07c.67-1.2 2.3-2.46 4.73-2.46 5.06 0 6 3.33 6 7.66V24h-5v-7.3c0-1.74-.03-3.98-2.43-3.98-2.43 0-2.8 1.9-2.8 3.86V24H8z"/></svg>
+          </a>
+          <a href="#" target="_blank" rel="noopener" aria-label="Shlok on Twitter" title="Twitter">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 4.56c-.89.39-1.83.65-2.82.77a4.92 4.92 0 0 0 2.16-2.71 9.86 9.86 0 0 1-3.12 1.19 4.92 4.92 0 0 0-8.38 4.49A13.96 13.96 0 0 1 1.67 3.15a4.92 4.92 0 0 0 1.52 6.57 4.86 4.86 0 0 1-2.23-.62v.06c0 2.38 1.69 4.37 3.94 4.82-.41.11-.85.17-1.3.17-.32 0-.63-.03-.93-.09a4.93 4.93 0 0 0 4.6 3.42A9.87 9.87 0 0 1 0 19.54 13.92 13.92 0 0 0 7.55 21.8c9.05 0 14-7.5 14-14l-.02-.64A10.03 10.03 0 0 0 24 4.56z"/></svg>
+          </a>
+          <a href="#" target="_blank" rel="noopener" aria-label="Shlok on Instagram" title="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.2c3.2 0 3.58.01 4.85.07 1.17.05 1.95.24 2.4.4.6.23 1.02.5 1.47.95.45.45.72.87.95 1.47.16.45.35 1.23.4 2.4.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.24 1.95-.4 2.4a3.92 3.92 0 0 1-.95 1.47 3.92 3.92 0 0 1-1.47.95c-.45.16-1.23.35-2.4.4-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.95-.24-2.4-.4a3.92 3.92 0 0 1-1.47-.95 3.92 3.92 0 0 1-.95-1.47c-.16-.45-.35-1.23-.4-2.4C2.21 15.58 2.2 15.2 2.2 12s.01-3.58.07-4.85c.05-1.17.24-1.95.4-2.4.23-.6.5-1.02.95-1.47.45-.45.87-.72 1.47-.95.45-.16 1.23-.35 2.4-.4C8.42 2.21 8.8 2.2 12 2.2m0-2.2C8.74 0 8.33.01 7.05.07 5.78.13 4.88.33 4.14.6c-.77.3-1.42.7-2.07 1.35A5.4 5.4 0 0 0 .6 4.14c-.27.74-.47 1.64-.53 2.91C.01 8.33 0 8.74 0 12c0 3.26.01 3.67.07 4.95.06 1.27.26 2.17.53 2.91.3.77.7 1.42 1.35 2.07.65.65 1.3 1.05 2.07 1.35.74.27 1.64.47 2.91.53 1.28.06 1.69.07 4.95.07s3.67-.01 4.95-.07c1.27-.06 2.17-.26 2.91-.53.77-.3 1.42-.7 2.07-1.35.65-.65 1.05-1.3 1.35-2.07.27-.74.47-1.64.53-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.17-.53-2.91-.3-.77-.7-1.42-1.35-2.07A5.4 5.4 0 0 0 19.86.6c-.74-.27-1.64-.47-2.91-.53C15.67.01 15.26 0 12 0Z"/><path d="M12 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84Zm0 10.16A4 4 0 1 1 16 12a4 4 0 0 1-4 4Z"/><circle cx="18.4" cy="5.6" r="1.44"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <a href="index.html" class="about-back">&larr; Back to Home</a>
+  </div>
+
+<!-- Search Overlay -->
+<div class="search-overlay" data-search-overlay aria-hidden="true">
+  <div class="search-panel" role="dialog" aria-modal="true" aria-labelledby="site-search-title">
+    <button class="search-close" aria-label="Close Search" data-search-close>&times;</button>
+    <h3 id="site-search-title">Search the site</h3>
+    <div class="search-input-row">
+      <ion-icon name="search"></ion-icon>
+      <input type="search" id="site-search-input" placeholder="Search destinations, packages, gallery..." autocomplete="off">
+    </div>
+    <div class="search-results" id="site-search-results" role="list" aria-label="Search results"></div>
+  </div>
+</div>
+  
+  <!-- Mission, Values and Impact Stats -->
+  <section class="section mission-section" aria-labelledby="mission-title">
+    <div class="container-narrow">
+      <h2 id="mission-title">Our Mission</h2>
+      <p class="lead">To make world-class travel accessible, sustainable, and unforgettable for everyone.</p>
+
+      <div class="values-grid" role="list">
+        <article class="value-card" role="listitem">
+          <h3>Customer First</h3>
+          <p>We design every itinerary around real human needs, not generic packages.</p>
+        </article>
+        <article class="value-card" role="listitem">
+          <h3>Sustainability</h3>
+          <p>We partner with eco-friendly stays and local guides to reduce footprint.</p>
+        </article>
+        <article class="value-card" role="listitem">
+          <h3>Trust & Safety</h3>
+          <p>24/7 support, vetted partners, and transparent pricing on every trip.</p>
+        </article>
+      </div>
+
+      <ul class="stats" aria-label="Impact statistics">
+        <li><span class="stat-number">25k+</span><span class="stat-label">Happy Travelers</span></li>
+        <li><span class="stat-number">120+</span><span class="stat-label">Destinations</span></li>
+        <li><span class="stat-number">4.9/5</span><span class="stat-label">Average Rating</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section testimonials" aria-labelledby="testimonials-title">
+    <div class="container-narrow">
+      <h2 id="testimonials-title">What Travelers Say</h2>
+      <div class="testimonials-grid">
+        <figure class="testimonial">
+          <blockquote>Our honeymoon was seamless and magical. The local experiences were priceless!</blockquote>
+          <figcaption>— Ayesha & Rahim</figcaption>
+        </figure>
+        <figure class="testimonial">
+          <blockquote>Support was instant when our flight got delayed. They rebooked everything while we slept.</blockquote>
+          <figcaption>— Daniel K.</figcaption>
+        </figure>
+        <figure class="testimonial">
+          <blockquote>Best solo trip I have ever had. Felt safe, cared for, and inspired.</blockquote>
+          <figcaption>— Priya S.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Company Timeline -->
+  <section class="section timeline" aria-labelledby="timeline-title">
+    <div class="container-narrow">
+      <h2 id="timeline-title">Our Journey</h2>
+      <ol class="timeline-list">
+        <li>
+          <time datetime="2021">2021</time>
+          <span>Founded in Jaipur with a mission to simplify travel.</span>
+        </li>
+        <li>
+          <time datetime="2022">2022</time>
+          <span>Launched curated eco-tours across 30 destinations.</span>
+        </li>
+        <li>
+          <time datetime="2023">2023</time>
+          <span>Reached 10k travelers and 4.9 rating across platforms.</span>
+        </li>
+        <li>
+          <time datetime="2024">2024</time>
+          <span>Introduced 24/7 concierge with multilingual support.</span>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- FAQ Accordion -->
+  <section class="section faq" aria-labelledby="faq-title">
+    <div class="container-narrow">
+      <h2 id="faq-title">Frequently Asked Questions</h2>
+      <div class="faq-list" role="list">
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq1">Can you customize my itinerary?</button>
+          <div id="faq1" class="faq-answer" hidden>
+            Yes. We tailor trips to your dates, budget, pace, and interests.
+          </div>
+        </div>
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq2">What if my flight is delayed?</button>
+          <div id="faq2" class="faq-answer" hidden>
+            Our team will proactively rebook connections and adjust transfers where possible.
+          </div>
+        </div>
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq3">Do you offer group discounts?</button>
+          <div id="faq3" class="faq-answer" hidden>
+            Yes, for groups of 6+ travelers. Contact us for a tailored quote.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Signup -->
+  <section class="section newsletter" aria-labelledby="newsletter-title">
+    <div class="container-narrow">
+      <h2 id="newsletter-title">Get Travel Deals & Tips</h2>
+      <form id="newsletter-form" class="newsletter-form" novalidate>
+        <label for="newsletter-email" class="sr-only">Email</label>
+        <input id="newsletter-email" name="email" type="email" placeholder="Enter your email" required aria-required="true">
+        <button type="submit" class="btn-primary">Subscribe</button>
+        <p id="newsletter-msg" role="status" aria-live="polite" class="form-msg" hidden></p>
+      </form>
+    </div>
+  </section>
+  <style>
+    body {
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', 'Montserrat', Arial, sans-serif;
+      overflow-x: hidden;
+    }
+
+    .about-bg-animated {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
+      background: #f8fafc url('./assets/images/hero-banner.jpg') no-repeat center 80px;
+      background-size: 400% 400%;
+      animation: gradientMove 12s ease-in-out infinite alternate;
+      filter: blur(0.5px);
+    }
+
+    @keyframes gradientMove {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .glass-effect {
+      background: rgba(255, 255, 255, 0.30);
+      box-shadow: 0 8px 32px 0 rgba(33, 150, 243, 0.10);
+      backdrop-filter: blur(18px) saturate(1.2);
+      -webkit-backdrop-filter: blur(18px) saturate(1.2);
+      border-radius: 28px;
+      border: 2px solid rgba(255, 255, 255, 0.22);
+      transition: box-shadow 0.2s;
+    }
+
+    .about-container {
+      max-width: 750px;
+      margin: 70px auto 0 auto;
+      padding: 54px 40px 40px 40px;
+      text-align: center;
+      animation: fadeIn 1.2s 0.2s forwards;
+      opacity: 0;
+    }
+
+    .about-container.fade-in {
+      opacity: 1;
+    }
+
+    .about-container h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.7rem;
+      color: #1a2a4f;
+      margin-bottom: 18px;
+      position: relative;
+      text-shadow: 0 2px 12px #fff8, 0 1px 0 #fff;
+    }
+
+    .about-container p {
+      color: #1a2a4f;
+      font-size: 1.18rem;
+      margin-bottom: 36px;
+      text-shadow: 0 1px 8px #fff6;
+    }
+
+    .team-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 36px;
+      margin-top: 28px;
+    }
+
+    .team-member {
+      background: linear-gradient(135deg, #f7971e 0%, #ffd200 100%);
+      border-radius: 18px;
+      box-shadow: 0 2px 16px 0 rgba(33, 150, 243, 0.13);
+      padding: 32px 22px 22px 22px;
+      min-width: 180px;
+      flex: 1 1 180px;
+      max-width: 220px;
+      transition: box-shadow 0.2s, transform 0.2s, background 0.3s;
+      border: 1.5px solid #fffbe6;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .team-member:nth-child(2) {
+      background: linear-gradient(135deg, #6dd5ed 0%, #2193b0 100%);
+      border: 1.5px solid #e3eafc;
+    }
+
+    .team-member:nth-child(3) {
+      background: linear-gradient(135deg, #f7971e 0%, #e3eafc 100%);
+      border: 1.5px solid #ffd200;
+    }
+
+    .team-member:hover {
+      box-shadow: 0 8px 32px rgba(33, 150, 243, 0.18);
+      transform: translateY(-6px) scale(1.04);
+      background: linear-gradient(120deg, #fffbe6 0%, #e3eafc 100%);
+    }
+
+    .team-member h3 {
+      font-family: 'Montserrat', sans-serif;
+      color: #16305a;
+      font-size: 1.25rem;
+      margin-bottom: 8px;
+      margin-top: 0;
+      text-shadow: 0 1px 8px #fff6;
+    }
+
+    .team-member span {
+      color: #fff;
+      font-size: 1.01rem;
+      font-weight: 600;
+      text-shadow: 0 1px 8px #0004;
+      letter-spacing: 0.2px;
+    }
+
+    .about-back {
+      display: inline-block;
+      margin-top: 36px;
+      color: #2193b0;
+      text-decoration: underline;
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: 0.2px;
+      text-shadow: 0 1px 8px #fff6;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+
+      to {
+        opacity: 1;
+        transform: none;
+      }
+    }
+  </style>
+  <style>
+    /* Reusable layout */
+    .section {
+      padding: 56px 20px;
+    }
+    .container-narrow {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    /* Avatars inside team cards */
+    .team-member .avatar {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background: #ffffffcc;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      color: #16305a;
+      margin-bottom: 10px;
+      border: 2px solid #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .team-member .avatar-img {
+      width: 76px;
+      height: 76px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+      margin-bottom: 10px;
+    }
+    .team-member .socials { display: flex; gap: 10px; justify-content: center; margin-top: 12px; }
+    .team-member .socials a { color: #16305a; background: #ffffffbb; border: 1px solid #e8eefc; width: 32px; height: 32px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; }
+    .team-member .socials a:hover { background: #fff; box-shadow: 0 2px 10px rgba(33,150,243,0.12); }
+
+    /* Mission/Values/Stats */
+    .mission-section h2,
+    .testimonials h2,
+    .timeline h2,
+    .faq h2,
+    .newsletter h2 {
+      text-align: center;
+      color: #1a2a4f;
+      font-family: 'Montserrat', sans-serif;
+      margin-bottom: 18px;
+    }
+    .lead {
+      text-align: center;
+      color: #2a4d8f;
+      margin: 0 auto 24px auto;
+      max-width: 700px;
+    }
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 12px;
+    }
+    .value-card {
+      background: #ffffffdd;
+      border: 1px solid #e8eefc;
+      border-radius: 14px;
+      padding: 18px;
+      box-shadow: 0 2px 10px rgba(33,150,243,0.06);
+    }
+    .value-card h3 {
+      margin: 0 0 6px 0;
+      font-size: 1.1rem;
+      color: #16305a;
+      font-family: 'Montserrat', sans-serif;
+    }
+    .stats {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 12px;
+      padding: 0;
+      margin: 22px 0 0 0;
+    }
+    .stats li {
+      background: #f4f8ff;
+      border: 1px solid #e8eefc;
+      border-radius: 14px;
+      padding: 16px;
+      text-align: center;
+    }
+    .stat-number { display: block; font-size: 1.4rem; font-weight: 800; color: #16305a; }
+    .stat-label { display: block; color: #2a4d8f; font-weight: 500; }
+
+    /* Testimonials */
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+      margin-top: 8px;
+    }
+    .testimonial {
+      background: #ffffffdd;
+      border: 1px solid #e8eefc;
+      border-radius: 14px;
+      padding: 18px;
+      box-shadow: 0 2px 10px rgba(33,150,243,0.06);
+    }
+    .testimonial blockquote { margin: 0 0 10px 0; color: #16305a; }
+    .testimonial figcaption { color: #2a4d8f; font-weight: 600; }
+
+    /* Timeline */
+    .timeline-list {
+      list-style: none;
+      padding: 0;
+      margin: 8px 0 0 0;
+      border-left: 3px solid #e3eafc;
+    }
+    .timeline-list li {
+      padding: 12px 12px 12px 16px;
+      position: relative;
+    }
+    .timeline-list li::before {
+      content: '';
+      width: 10px; height: 10px;
+      background: #2193b0;
+      border-radius: 50%;
+      position: absolute;
+      left: -6px; top: 18px;
+      box-shadow: 0 0 0 4px #eaf3ff;
+    }
+    .timeline-list time { font-weight: 700; color: #16305a; margin-right: 8px; }
+    .timeline-list span { color: #2a4d8f; }
+
+    /* FAQ */
+    .faq-list { max-width: 800px; margin: 8px auto 0 auto; }
+    .faq-item { border-bottom: 1px solid #e8eefc; }
+    .faq-question {
+      width: 100%;
+      text-align: left;
+      background: transparent;
+      border: 0;
+      padding: 16px 6px;
+      font-size: 1rem;
+      color: #16305a;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .faq-answer { padding: 0 6px 16px 6px; color: #2a4d8f; }
+
+    /* Newsletter */
+    .newsletter-form { display: flex; gap: 10px; justify-content: center; margin-top: 8px; }
+    .newsletter-form input[type="email"] {
+      padding: 12px 14px; border-radius: 10px; border: 1px solid #cfe1ff; min-width: 260px; font-size: 1rem;
+    }
+    .btn-primary { background: #2193b0; color: #fff; border: 0; padding: 12px 16px; border-radius: 10px; font-weight: 700; cursor: pointer; }
+    .btn-primary:hover { background: #1b7891; }
+    .form-msg { text-align: center; margin-top: 10px; color: #16305a; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+
+    @media (max-width: 520px) {
+      .newsletter-form { flex-direction: column; align-items: stretch; }
+      .newsletter-form input[type="email"] { min-width: 100%; }
+    }
+  </style>
+  <style>
+    /* Header logo centering override */
+    .header-top .container { display: flex; justify-content: center; align-items: center; }
+    .header .logo img { height: 40px; display: block; }
+
+    /* Palette refresh: neutral slate text, white cards, teal accents */
+    body { background: linear-gradient(180deg, #f8fafc 0%, #eef2f7 100%); }
+    .about-container h1 { color: #0f172a; }
+    .about-container p, .lead { color: #334155; }
+    .about-back { color: #0ea5a6; }
+
+    /* Tone down animated bg */
+    .about-bg-animated { filter: grayscale(25%) saturate(0.9) brightness(1.05) blur(0.5px); }
+
+    /* Team card restyle: remove harsh gradients */
+    .team-member { background: #ffffff; border: 1px solid #e5e7eb; }
+    .team-member:nth-child(2),
+    .team-member:nth-child(3) { background: #ffffff; border: 1px solid #e5e7eb; }
+    .team-member:hover { background: #ffffff; box-shadow: 0 8px 24px rgba(2, 6, 23, 0.08); transform: translateY(-6px) scale(1.03); }
+    .team-member h3 { color: #0f172a; text-shadow: none; }
+    .team-member span { color: #475569; text-shadow: none; }
+    .team-member .socials a { color: #0f172a; }
+
+    /* Cards and section elements */
+    .value-card, .testimonial, .stats li { background: #ffffff; border: 1px solid #e5e7eb; box-shadow: 0 1px 6px rgba(2, 6, 23, 0.04); }
+    .stat-number { color: #0f172a; }
+    .stat-label { color: #475569; }
+
+    /* Buttons and links */
+    .btn-primary { background: #0ea5a6; }
+    .btn-primary:hover { background: #0b8e90; }
+    .faq-question { color: #0f172a; }
+    .faq-answer { color: #475569; }
+  </style>
+  <script>
+    // FAQ accordion behavior with ARIA updates
+    (function() {
+      var faqButtons = document.querySelectorAll('.faq-question');
+      faqButtons.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          var answer = document.getElementById(btn.getAttribute('aria-controls'));
+          var expanded = btn.getAttribute('aria-expanded') === 'true';
+          // Close all others
+          faqButtons.forEach(function(other) {
+            var otherAnswer = document.getElementById(other.getAttribute('aria-controls'));
+            other.setAttribute('aria-expanded', 'false');
+            if (otherAnswer) { otherAnswer.hidden = true; }
+          });
+          // Toggle current
+          btn.setAttribute('aria-expanded', String(!expanded));
+          if (answer) { answer.hidden = expanded; }
+        });
+      });
+    })();
+
+    // Newsletter form validation
+    (function() {
+      var form = document.getElementById('newsletter-form');
+      if (!form) return;
+      var input = document.getElementById('newsletter-email');
+      var msg = document.getElementById('newsletter-msg');
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        var email = (input.value || '').trim();
+        var valid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+        if (!valid) {
+          msg.textContent = 'Please enter a valid email address.';
+          msg.style.color = '#b00020';
+          msg.hidden = false;
+          input.setAttribute('aria-invalid', 'true');
+          input.focus();
+          return;
+        }
+        // Success UI (mock)
+        msg.textContent = 'Thanks! You\'re subscribed to our travel newsletter.';
+        msg.style.color = '#16305a';
+        msg.hidden = false;
+        input.value = '';
+        input.removeAttribute('aria-invalid');
+      });
+    })();
+  </script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

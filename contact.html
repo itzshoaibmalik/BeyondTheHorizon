@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Beyond The Horizon</title>
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  <header class="header" data-header>
+    <div class="overlay" data-overlay></div>
+
+    <div class="header-top">
+      <div class="container">
+        <a href="tel:+01123456790" class="helpline-box">
+          <div class="icon-box">
+            <ion-icon name="call-outline"></ion-icon>
+          </div>
+          <div class="wrapper">
+            <p class="helpline-title">For Further Inquires :</p>
+            <p class="helpline-number">+01 (123) 4567 90</p>
+          </div>
+        </a>
+
+        <a href="index.html" class="logo">
+          <img src="./favicon.svg" alt="Tourly logo">
+        </a>
+
+        <div class="header-btn-group">
+          <button class="search-btn" aria-label="Search" data-search-open>
+            <ion-icon name="search"></ion-icon>
+          </button>
+          <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-bottom">
+      <div class="container">
+        <ul class="social-list">
+          <li><a href="#" class="social-link"><ion-icon name="logo-facebook"></ion-icon></a></li>
+          <li><a href="#" class="social-link"><ion-icon name="logo-twitter"></ion-icon></a></li>
+          <li><a href="#" class="social-link"><ion-icon name="logo-youtube"></ion-icon></a></li>
+        </ul>
+
+        <nav class="navbar" data-navbar>
+          <div class="navbar-top">
+            <a href="#" class="logo"><img src="./favicon.svg" alt="Tourly logo"></a>
+            <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+          </div>
+          <ul class="navbar-list">
+            <li><a href="index.html" class="navbar-link" data-nav-link>home</a></li>
+            <li><a href="about.html" class="navbar-link" data-nav-link>about us</a></li>
+            <li><a href="destinations.html" class="navbar-link" data-nav-link>destinations</a></li>
+            <li><a href="packages.html" class="navbar-link" data-nav-link>packages</a></li>
+            <li><a href="gallery.html" class="navbar-link" data-nav-link>gallery</a></li>
+            <li><a href="contact.html" class="navbar-link active" data-nav-link>contact us</a></li>
+            <li><a href="login.html" class="navbar-link" data-nav-link>login</a></li>
+          </ul>
+        </nav>
+
+        <button class="btn btn-primary">Book Now</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" style="padding:56px 20px;">
+      <div class="container">
+        <h1 class="h2 section-title">Get in Touch</h1>
+        <p class="section-text">We'd love to hear from you. Fill the form and our team will respond soon.</p>
+        <form class="form-wrapper" id="contact-form">
+          <div class="search-grid">
+            <div class="input-wrapper">
+              <label for="name" class="input-label">Name</label>
+              <input id="name" name="name" class="input-field" required placeholder="Your name">
+            </div>
+            <div class="input-wrapper">
+              <label for="email" class="input-label">Email</label>
+              <input type="email" id="email" name="email" class="input-field" required placeholder="you@example.com">
+            </div>
+            <div class="input-wrapper" style="grid-column: 1 / -1;">
+              <label for="message" class="input-label">Message</label>
+              <textarea id="message" name="message" class="input-field" rows="5" required placeholder="How can we help?"></textarea>
+            </div>
+          </div>
+          <button class="btn btn-primary" type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Search Overlay -->
+  <div class="search-overlay" data-search-overlay aria-hidden="true">
+    <div class="search-panel" role="dialog" aria-modal="true" aria-labelledby="site-search-title">
+      <button class="search-close" aria-label="Close Search" data-search-close>&times;</button>
+      <h3 id="site-search-title">Search the site</h3>
+      <div class="search-input-row">
+        <ion-icon name="search"></ion-icon>
+        <input type="search" id="site-search-input" placeholder="Search destinations, packages, gallery..." autocomplete="off">
+      </div>
+      <div class="search-results" id="site-search-results" role="list" aria-label="Search results"></div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-brand">
+          <a href="index.html" class="logo"><img src="./favicon.svg" alt="Tourly logo"></a>
+          <p class="footer-text">Need help with a booking? Our support team is here 24/7.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="./assets/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <style>
+    /* Search overlay minimal styles */
+    .search-overlay { position: fixed; inset: 0; background: rgba(15,23,42,0.6); display: none; align-items: center; justify-content: center; z-index: 1000; }
+    .search-overlay.active { display: flex; }
+    .search-panel { width: min(920px, 92vw); background: #fff; border-radius: 14px; padding: 18px; box-shadow: 0 10px 40px rgba(2,6,23,0.25); position: relative; }
+    .search-close { position: absolute; top: 8px; right: 10px; background: transparent; border: 0; font-size: 28px; line-height: 1; cursor: pointer; }
+    .search-input-row { display: flex; gap: 10px; align-items: center; border: 1px solid #e5e7eb; border-radius: 10px; padding: 10px 12px; }
+    .search-input-row input { flex: 1; border: 0; outline: 0; font-size: 1rem; }
+    .search-results { margin-top: 12px; max-height: 50vh; overflow: auto; display: grid; gap: 8px; }
+    .search-result-item { padding: 10px 12px; border: 1px solid #e5e7eb; border-radius: 10px; display: flex; justify-content: space-between; align-items: center; }
+    .search-result-item .meta { color: #64748b; font-size: 0.9rem; }
+    .search-highlight { background: #fff7ed; box-shadow: 0 0 0 2px #fdba74 inset; border-radius: 8px; }
+    .navbar-link.active { color: #0ea5a6; font-weight: 600; }
+  </style>
+  <script>
+    document.getElementById('contact-form').addEventListener('submit', function(e){
+      e.preventDefault();
+      alert('Thanks! We\'ll get back to you shortly.');
+      this.reset();
+    });
+  </script>
+</body>
+</html>
+

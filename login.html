@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Beyond The Horizon</title>
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+      background: url('./assets/images/hero-banner.jpg') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Roboto', 'Montserrat', Arial, sans-serif;
+    }
+    .login-container {
+      background: rgba(255,255,255,0.18);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.25);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-radius: 28px;
+      border: 1.5px solid rgba(255,255,255,0.22);
+      padding: 48px 36px 36px 36px;
+      max-width: 370px;
+      width: 100%;
+      text-align: center;
+      transition: box-shadow 0.2s;
+    }
+    .login-container:hover {
+      box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.32);
+    }
+    .login-container h2 {
+      margin-bottom: 24px;
+      color: #1a2a4f;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      letter-spacing: 1px;
+      font-size: 2rem;
+    }
+    .login-container input {
+      width: 100%;
+      padding: 14px 18px;
+      margin-bottom: 18px;
+      border-radius: 12px;
+      border: 1.5px solid #b0b0b0;
+      font-size: 16px;
+      outline: none;
+      background: rgba(255,255,255,0.85);
+      font-family: 'Roboto', Arial, sans-serif;
+      transition: border 0.2s;
+    }
+    .login-container input:focus {
+      border: 1.5px solid #2a4d8f;
+    }
+    .login-container button {
+      width: 100%;
+      padding: 14px;
+      border-radius: 12px;
+      border: none;
+      background: linear-gradient(135deg, #2a4d8f, #16305a);
+      color: #fff;
+      font-size: 17px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.2s, box-shadow 0.2s;
+      box-shadow: 0 2px 8px rgba(33, 150, 243, 0.10);
+      letter-spacing: 0.5px;
+    }
+    .login-container button:hover {
+      background: linear-gradient(135deg, #16305a, #2a4d8f);
+      box-shadow: 0 6px 18px rgba(33, 150, 243, 0.18);
+    }
+    .login-container a {
+      font-family: 'Roboto', Arial, sans-serif;
+    }
+    #togglePassword {
+      color: #2a4d8f;
+      font-size: 20px;
+      opacity: 0.7;
+      transition: opacity 0.2s;
+    }
+    #togglePassword:hover {
+      opacity: 1;
+    }
+    .login-container .signup-link a {
+      color: #2a4d8f;
+      text-decoration: underline;
+      font-weight: 500;
+    }
+    .login-container .signup-link {
+      margin-top: 16px;
+      font-size: 15px;
+    }
+    .login-container .back-link {
+      display: inline-block;
+      margin-top: 18px;
+      color: #2a4d8f;
+      text-decoration: underline;
+      font-size: 15px;
+      font-weight: 500;
+      letter-spacing: 0.2px;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <a href="index.html" style="display:flex;align-items:center;justify-content:center;margin-bottom:18px;">
+      <img src="./favicon.svg" alt="Logo" style="width:48px;height:48px;">
+    </a>
+    <h2>Login</h2>
+    <form>
+      <input type="text" placeholder="Username or Email" required>
+      <div style="position:relative;">
+        <input id="password" type="password" placeholder="Password" required style="padding-right:40px;">
+        <span id="togglePassword" style="position:absolute;right:12px;top:50%;transform:translateY(-50%);cursor:pointer;color:#16305a;font-size:18px;">👁️</span>
+      </div>
+      <a href="#" style="display:block;text-align:right;font-size:13px;color:#2a4d8f;margin-bottom:16px;text-decoration:none;">Forgot password?</a>
+      <button type="submit">Login</button>
+    </form>
+  <a href="index.html" class="back-link">&larr; Back to Home</a>
+  <div class="signup-link">Don't have an account? <a href="#">Sign up</a></div>
+  </div>
+  <script>
+    const togglePassword = document.getElementById('togglePassword');
+    const passwordInput = document.getElementById('password');
+    if(togglePassword && passwordInput) {
+      togglePassword.addEventListener('click', function() {
+        const type = passwordInput.type === 'password' ? 'text' : 'password';
+        passwordInput.type = type;
+        this.textContent = type === 'password' ? '👁️' : '🙈';
+      });
+    }
+  </script>
+</body>
+</html>
