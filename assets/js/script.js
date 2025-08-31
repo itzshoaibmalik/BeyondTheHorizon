@@ -256,3 +256,78 @@ document.addEventListener('DOMContentLoaded', function() {
     renderResults(matches);
   });
 });
+
+/**
+ * Global CTA button behaviors and fallbacks
+ */
+document.addEventListener('DOMContentLoaded', function() {
+  // Hero CTA buttons
+  const heroButtons = document.querySelectorAll('.btn-hero');
+  heroButtons.forEach((buttonElement) => {
+    const label = (buttonElement.textContent || '').trim().toLowerCase();
+    buttonElement.addEventListener('click', function(event) {
+      event.preventDefault();
+      if (label.includes('explore')) {
+        const destSection = document.querySelector('#destination');
+        if (destSection) {
+          destSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        } else {
+          window.location.href = 'destinations.html';
+        }
+      } else if (label.includes('book')) {
+        const pkgSection = document.querySelector('#package');
+        if (pkgSection) {
+          pkgSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        } else {
+          window.location.href = 'packages.html';
+        }
+      }
+    });
+  });
+
+  // "More destinations" button
+  document.querySelectorAll('button.btn.btn-primary').forEach((buttonElement) => {
+    if ((buttonElement.textContent || '').trim().toLowerCase().includes('more destinations')) {
+      buttonElement.addEventListener('click', function(event) {
+        event.preventDefault();
+        window.location.href = 'destinations.html';
+      });
+    }
+  });
+
+  // "View All Packages"
+  document.querySelectorAll('button.btn.btn-primary, a.btn.btn-primary').forEach((el) => {
+    if ((el.textContent || '').trim().toLowerCase().includes('view all packages')) {
+      el.addEventListener('click', function(event) {
+        event.preventDefault();
+        window.location.href = 'packages.html';
+      });
+    }
+  });
+
+  // "Contact Us" CTA
+  document.querySelectorAll('button.btn.btn-secondary, a.btn.btn-secondary').forEach((el) => {
+    if ((el.textContent || '').trim().toLowerCase().includes('contact us')) {
+      el.addEventListener('click', function(event) {
+        event.preventDefault();
+        window.location.href = 'contact.html';
+      });
+    }
+  });
+
+  // Header "Book Now" fallback if booking system is not present on this page
+  if (typeof window.openBookingModal === 'undefined') {
+    const headerBookBtn = document.querySelector('.header-bottom .btn.btn-primary');
+    if (headerBookBtn && (headerBookBtn.textContent || '').toLowerCase().includes('book')) {
+      headerBookBtn.addEventListener('click', function(event) {
+        event.preventDefault();
+        const pkgSection = document.querySelector('#package');
+        if (pkgSection) {
+          pkgSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        } else {
+          window.location.href = 'packages.html';
+        }
+      });
+    }
+  }
+});

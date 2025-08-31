@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,10 @@
   <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
+  <a href="#main" class="skip-link"
+    style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to main content</a>
   <header class="header" data-header>
     <div class="overlay" data-overlay></div>
 
@@ -24,7 +28,7 @@
         </a>
 
         <a href="index.html" class="logo">
-          <img src="./favicon.svg" alt="Tourly logo">
+          <img src="./favicon.svg" alt="Beyond The Horizon logo">
         </a>
 
         <div class="header-btn-group">
@@ -48,7 +52,7 @@
 
         <nav class="navbar" data-navbar>
           <div class="navbar-top">
-            <a href="#" class="logo"><img src="./favicon.svg" alt="Tourly logo"></a>
+            <a href="index.html" class="logo"><img src="./favicon.svg" alt="Beyond The Horizon logo"></a>
             <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
               <ion-icon name="close-outline"></ion-icon>
             </button>
@@ -69,16 +73,35 @@
     </div>
   </header>
 
-  <main>
+  <main id="main" role="main">
+    <section class="page-hero">
+      <div class="page-hero-media" aria-hidden="true"></div>
+      <div class="page-hero-vignette" aria-hidden="true"></div>
+      <div class="container" style="position: relative; z-index: 2;">
+        <h1 class="h2 section-title">Photo Gallery</h1>
+        <p class="section-text" style="max-width: 720px; margin: 0 auto; opacity: 0.95;">Travel moments captured by our
+          community.</p>
+      </div>
+    </section>
     <section class="section" style="padding:56px 20px;">
       <div class="container">
-        <h1 class="h2 section-title">Photo Gallery</h1>
+        <h2 class="h2 section-title">Photo Gallery</h2>
         <ul class="gallery-list">
-          <li class="gallery-item"><figure class="gallery-image"><img src="./assets/images/gallery-1.jpg" alt="Gallery image"></figure></li>
-          <li class="gallery-item"><figure class="gallery-image"><img src="./assets/images/gallery-2.jpg" alt="Gallery image"></figure></li>
-          <li class="gallery-item"><figure class="gallery-image"><img src="./assets/images/gallery-3.jpg" alt="Gallery image"></figure></li>
-          <li class="gallery-item"><figure class="gallery-image"><img src="./assets/images/gallery-4.jpg" alt="Gallery image"></figure></li>
-          <li class="gallery-item"><figure class="gallery-image"><img src="./assets/images/gallery-5.jpg" alt="Gallery image"></figure></li>
+          <li class="gallery-item">
+            <figure class="gallery-image"><img src="./assets/images/gallery-1.jpg" alt="Gallery image"></figure>
+          </li>
+          <li class="gallery-item">
+            <figure class="gallery-image"><img src="./assets/images/gallery-2.jpg" alt="Gallery image"></figure>
+          </li>
+          <li class="gallery-item">
+            <figure class="gallery-image"><img src="./assets/images/gallery-3.jpg" alt="Gallery image"></figure>
+          </li>
+          <li class="gallery-item">
+            <figure class="gallery-image"><img src="./assets/images/gallery-4.jpg" alt="Gallery image"></figure>
+          </li>
+          <li class="gallery-item">
+            <figure class="gallery-image"><img src="./assets/images/gallery-5.jpg" alt="Gallery image"></figure>
+          </li>
         </ul>
       </div>
     </section>
@@ -91,7 +114,8 @@
       <h3 id="site-search-title">Search the site</h3>
       <div class="search-input-row">
         <ion-icon name="search"></ion-icon>
-        <input type="search" id="site-search-input" placeholder="Search destinations, packages, gallery..." autocomplete="off">
+        <input type="search" id="site-search-input" placeholder="Search destinations, packages, gallery..."
+          autocomplete="off">
       </div>
       <div class="search-results" id="site-search-results" role="list" aria-label="Search results"></div>
     </div>
@@ -101,30 +125,226 @@
     <div class="footer-top">
       <div class="container">
         <div class="footer-brand">
-          <a href="index.html" class="logo"><img src="./favicon.svg" alt="Tourly logo"></a>
-          <p class="footer-text">Travel moments captured by our community.</p>
+          <a href="index.html" class="logo" style="display: inline-flex; align-items: center;"><img src="./favicon.svg"
+              alt="Beyond The Horizon logo" style="height: 40px; width: auto; display: block;"></a>
+          <p class="footer-text">Beyond The Horizon curates unforgettable journeys, from iconic landmarks to hidden gems
+            worldwide.</p>
+        </div>
+
+        <div class="footer-contact">
+          <h4 class="contact-title">Contact Us</h4>
+          <p class="contact-text">Feel free to contact and reach us !!</p>
+          <ul>
+            <li class="contact-item"><ion-icon name="call-outline"></ion-icon><a href="tel:+01123456790"
+                class="contact-link">+01 (123) 4567 90</a></li>
+            <li class="contact-item"><ion-icon name="mail-outline"></ion-icon><a href="mailto:info.tourly.com"
+                class="contact-link">info.tourly.com</a></li>
+            <li class="contact-item"><ion-icon name="location-outline"></ion-icon>
+              <address>3146 Koontz, California</address>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-form">
+          <p class="form-text">Subscribe our newsletter for more update & news !!</p>
+          <form action="" class="form-wrapper">
+            <input type="email" name="email" class="input-field" placeholder="Enter Your Email" required>
+            <button type="submit" class="btn btn-secondary">Subscribe</button>
+          </form>
         </div>
       </div>
     </div>
+    <div class="footer-separator"></div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="copyright">&copy; 2025 Beyond The Horizon. All rights reserved.</p>
+        <ul class="footer-bottom-list">
+          <li><a href="privacy.html" class="footer-bottom-link">Privacy Policy</a></li>
+          <li><a href="terms.html" class="footer-bottom-link">Terms & Conditions</a></li>
+          <li><a href="faq.html" class="footer-bottom-link">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
   </footer>
-  
+
   <script src="./assets/js/script.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <style>
+    .page-hero {
+      background: linear-gradient(135deg, #0a5f77 0%, #083647 100%);
+      color: #f8fafc;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      padding: 160px 20px 80px;
+    }
+
+    @media (max-width: 768px) {
+      .page-hero {
+        padding: 190px 16px 70px;
+      }
+    }
+
+    .page-hero-media {
+      position: absolute;
+      inset: 0;
+      background: #0b1324 url('./hup.gif') center/cover no-repeat fixed;
+      opacity: 0.6;
+      filter: saturate(1.05) contrast(1.1);
+      z-index: 0;
+    }
+
+    .page-hero-vignette {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      background: linear-gradient(180deg, rgba(2, 6, 23, 0.75) 0%, rgba(2, 6, 23, 0.55) 60%, rgba(2, 6, 23, 0.85) 100%);
+      pointer-events: none;
+    }
+
+    .page-hero .section-title,
+    .page-hero .section-text {
+      color: #f8fafc;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
+    }
+
+    .page-hero .container {
+      position: relative;
+      z-index: 2;
+    }
+
     /* Search overlay minimal styles */
-    .search-overlay { position: fixed; inset: 0; background: rgba(15,23,42,0.6); display: none; align-items: center; justify-content: center; z-index: 1000; }
-    .search-overlay.active { display: flex; }
-    .search-panel { width: min(920px, 92vw); background: #fff; border-radius: 14px; padding: 18px; box-shadow: 0 10px 40px rgba(2,6,23,0.25); position: relative; }
-    .search-close { position: absolute; top: 8px; right: 10px; background: transparent; border: 0; font-size: 28px; line-height: 1; cursor: pointer; }
-    .search-input-row { display: flex; gap: 10px; align-items: center; border: 1px solid #e5e7eb; border-radius: 10px; padding: 10px 12px; }
-    .search-input-row input { flex: 1; border: 0; outline: 0; font-size: 1rem; }
-    .search-results { margin-top: 12px; max-height: 50vh; overflow: auto; display: grid; gap: 8px; }
-    .search-result-item { padding: 10px 12px; border: 1px solid #e5e7eb; border-radius: 10px; display: flex; justify-content: space-between; align-items: center; }
-    .search-result-item .meta { color: #64748b; font-size: 0.9rem; }
-    .search-highlight { background: #fff7ed; box-shadow: 0 0 0 2px #fdba74 inset; border-radius: 8px; }
-    .navbar-link.active { color: #0ea5a6; font-weight: 600; }
+    .search-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.6);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+    }
+
+    .search-overlay.active {
+      display: flex;
+    }
+
+    .search-panel {
+      width: min(920px, 92vw);
+      background: #fff;
+      border-radius: 14px;
+      padding: 18px;
+      box-shadow: 0 10px 40px rgba(2, 6, 23, 0.25);
+      position: relative;
+    }
+
+    .search-close {
+      position: absolute;
+      top: 8px;
+      right: 10px;
+      background: transparent;
+      border: 0;
+      font-size: 28px;
+      line-height: 1;
+      cursor: pointer;
+    }
+
+    .search-input-row {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      padding: 10px 12px;
+    }
+
+    .search-input-row input {
+      flex: 1;
+      border: 0;
+      outline: 0;
+      font-size: 1rem;
+    }
+
+    .search-results {
+      margin-top: 12px;
+      max-height: 50vh;
+      overflow: auto;
+      display: grid;
+      gap: 8px;
+    }
+
+    .search-result-item {
+      padding: 10px 12px;
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .search-result-item .meta {
+      color: #64748b;
+      font-size: 0.9rem;
+    }
+
+    .search-highlight {
+      background: #fff7ed;
+      box-shadow: 0 0 0 2px #fdba74 inset;
+      border-radius: 8px;
+    }
+
+    .navbar-link.active {
+      color: #0ea5a6;
+      font-weight: 600;
+    }
+
+    /* Enhanced Responsive Design */
+    @media (max-width: 768px) {
+      .container {
+        padding: 0 16px;
+      }
+
+      .section-title {
+        font-size: 2rem;
+      }
+
+      .gallery-list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .section-title {
+        font-size: 1.8rem;
+      }
+
+      .section {
+        padding: 40px 16px;
+      }
+
+      .gallery-list {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+    }
+
+    /* Enhanced animations */
+    .gallery-item {
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      will-change: transform, box-shadow;
+    }
+
+    .gallery-item:hover {
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Smooth scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
   </style>
 </body>
-</html>
 
+</html>

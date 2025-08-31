@@ -28,6 +28,7 @@
 </head>
 
 <body id="top">
+  <a href="#main" class="skip-link" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to main content</a>
 
   <!-- 
     - #HEADER
@@ -54,8 +55,8 @@
 
         </a>
 
-        <a href="#" class="logo">
-          <img src="./favicon.svg" alt="Tourly logo">
+        <a href="index.html" class="logo" style="display: inline-flex; align-items: center;">
+          <img src="./favicon.svg" alt="Beyond The Horizon logo" style="height: 40px; width: auto; display: block;">
         </a>
 
         <div class="header-btn-group">
@@ -102,8 +103,8 @@
 
           <div class="navbar-top">
 
-            <a href="#" class="logo">
-              <img src="./favicon.svg" alt="Tourly logo">
+            <a href="index.html" class="logo" style="display: inline-flex; align-items: center;">
+              <img src="./favicon.svg" alt="Beyond The Horizon logo" style="height: 46px; width: auto; display: block;">
             </a>
 
             <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
@@ -156,7 +157,7 @@
 
 
 
-  <main>
+  <main id="main" role="main">
     <article>
 
       <!-- 
@@ -166,7 +167,7 @@
       <section class="hero" id="home">
         <!-- Hero Background Image -->
         <div class="hero-bg-img">
-          <div class="image-overlay"></div>
+          <div class="image-overlay" style="background: linear-gradient(180deg, rgba(2,6,23,0.45) 0%, rgba(2,6,23,0.35) 50%, rgba(2,6,23,0.55) 100%);"></div>
         </div>
 
         <div class="container">
@@ -216,55 +217,60 @@
         - #TOUR SEARCH
       -->
 
-      <section class="tour-search">
-        <div class="container">
+      <section class="tour-search" style="background: linear-gradient(135deg, #0ea5a6 0%, #0891b2 100%); padding: 100px 0; margin: 0 0 80px 0; position: relative; overflow: hidden;">
+        <!-- Background Pattern -->
+        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 100 100\'%3E%3Cdefs%3E%3Cpattern id=\'grain\' width=\'100\' height=\'100\' patternUnits=\'userSpaceOnUse\'%3E%3Ccircle cx=\'50\' cy=\'50\' r=\'1\' fill=\'rgba(255,255,255,0.1)\'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width=\'100\' height=\'100\' fill=\'url(%23grain)\'/%3E%3C/svg%3E'); opacity: 0.3;"></div>
+        
+        <div class="container" style="position: relative; z-index: 2;">
 
-          <div class="search-header">
-            <h2 class="search-title">Find Your Perfect Adventure</h2>
-            <p class="search-subtitle">Search from thousands of destinations worldwide</p>
+          <div class="search-header" style="text-align: center; margin-bottom: 60px;">
+            <h2 class="search-title" style="color: white; font-size: 3.5rem; margin-bottom: 20px; font-weight: 800; text-shadow: 0 4px 8px rgba(0,0,0,0.1);">Find Your Perfect Adventure</h2>
+            <p class="search-subtitle" style="color: rgba(255,255,255,0.95); font-size: 1.3rem; max-width: 700px; margin: 0 auto; line-height: 1.6;">Search from thousands of destinations worldwide and discover your next unforgettable journey</p>
           </div>
 
-          <form action="" class="tour-search-form">
-            <div class="search-grid">
+          <form action="" class="tour-search-form" style="background: rgba(255,255,255,0.95); backdrop-filter: blur(20px); padding: 50px; border-radius: 24px; box-shadow: 0 25px 80px rgba(0,0,0,0.15); max-width: 1100px; margin: 0 auto; border: 1px solid rgba(255,255,255,0.2);">
+            <div class="search-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-bottom: 40px;">
               <div class="input-wrapper">
-                <label for="destination" class="input-label">
-                  <ion-icon name="location-outline"></ion-icon>
+                <label for="destination" class="input-label" style="color: #1f2937; font-weight: 700; margin-bottom: 12px; display: flex; align-items: center; gap: 10px; font-size: 1.1rem;">
+                  <ion-icon name="location-outline" style="color: #0ea5a6; font-size: 1.3rem;"></ion-icon>
                   Destination
                 </label>
                 <input type="text" name="destination" id="destination" required 
-                       placeholder="Where do you want to go?" class="input-field">
+                       placeholder="Where do you want to go?" class="input-field" style="border: 2px solid #e5e7eb; border-radius: 16px; padding: 18px 20px; font-size: 1.1rem; transition: all 0.3s ease; width: 100%; box-sizing: border-box; background: white; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
               </div>
 
               <div class="input-wrapper">
-                <label for="people" class="input-label">
-                  <ion-icon name="people-outline"></ion-icon>
+                <label for="people" class="input-label" style="color: #1f2937; font-weight: 700; margin-bottom: 12px; display: flex; align-items: center; gap: 10px; font-size: 1.1rem;">
+                  <ion-icon name="people-outline" style="color: #0ea5a6; font-size: 1.3rem;"></ion-icon>
                   Travelers
                 </label>
                 <input type="number" name="people" id="people" required 
-                       placeholder="Number of people" class="input-field" min="1" max="20">
+                       placeholder="Number of people" class="input-field" min="1" max="20" style="border: 2px solid #e5e7eb; border-radius: 16px; padding: 18px 20px; font-size: 1.1rem; transition: all 0.3s ease; width: 100%; box-sizing: border-box; background: white; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
               </div>
 
               <div class="input-wrapper">
-                <label for="checkin" class="input-label">
-                  <ion-icon name="calendar-outline"></ion-icon>
+                <label for="checkin" class="input-label" style="color: #1f2937; font-weight: 700; margin-bottom: 12px; display: flex; align-items: center; gap: 10px; font-size: 1.1rem;">
+                  <ion-icon name="calendar-outline" style="color: #0ea5a6; font-size: 1.3rem;"></ion-icon>
                   Departure Date
                 </label>
-                <input type="date" name="checkin" id="checkin" required class="input-field">
+                <input type="date" name="checkin" id="checkin" required class="input-field" style="border: 2px solid #e5e7eb; border-radius: 16px; padding: 18px 20px; font-size: 1.1rem; transition: all 0.3s ease; width: 100%; box-sizing: border-box; background: white; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
               </div>
 
               <div class="input-wrapper">
-                <label for="checkout" class="input-label">
-                  <ion-icon name="calendar-outline"></ion-icon>
+                <label for="checkout" class="input-label" style="color: #1f2937; font-weight: 700; margin-bottom: 12px; display: flex; align-items: center; gap: 10px; font-size: 1.1rem;">
+                  <ion-icon name="calendar-outline" style="color: #0ea5a6; font-size: 1.3rem;"></ion-icon>
                   Return Date
                 </label>
-                <input type="date" name="checkout" id="checkout" required class="input-field">
+                <input type="date" name="checkout" id="checkout" required class="input-field" style="border: 2px solid #e5e7eb; border-radius: 16px; padding: 18px 20px; font-size: 1.1rem; transition: all 0.3s ease; width: 100%; box-sizing: border-box; background: white; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
               </div>
             </div>
 
-            <button type="submit" class="btn btn-primary search-btn">
-              <ion-icon name="search-outline"></ion-icon>
-              
-            </button>
+            <div style="text-align: center;">
+              <button type="submit" class="btn btn-primary search-btn" style="background: linear-gradient(135deg, #0ea5a6 0%, #0891b2 100%); border: none; color: #fff; padding: 16px 28px; border-radius: 9999px; font-size: 1.05rem; font-weight: 700; cursor: pointer; transition: transform 0.2s ease, box-shadow 0.2s ease; box-shadow: 0 10px 28px rgba(14, 165, 166, 0.35); position: relative; overflow: hidden; display: inline-flex; align-items: center; gap: 10px; white-space: nowrap;">
+                <ion-icon name="search-outline" style="font-size: 1.25rem;"></ion-icon>
+                <span>Search Adventures</span>
+              </button>
+            </div>
           </form>
 
         </div>
@@ -296,7 +302,7 @@
               <div class="popular-card">
 
                 <figure class="card-img">
-                  <img src="./assets/images/popular-1.jpg" alt="San miguel, italy" loading="lazy">
+                  <img src="./assets/images/popular-1.jpg" alt="San Miguel, Italy" loading="lazy">
                 </figure>
 
                 <div class="card-content">
@@ -314,12 +320,10 @@
                   </p>
 
                   <h3 class="h3 card-title">
-                    <a href="#">San miguel</a>
+                    <a href="#">San Miguel</a>
                   </h3>
 
-                  <p class="card-text">
-                    Fusce hic augue velit wisi ips quibusdam pariatur, iusto.
-                  </p>
+                  <p class="card-text">Sun‑kissed coasts, colorful villages, and authentic Italian cuisine.</p>
 
                 </div>
 
@@ -330,7 +334,7 @@
               <div class="popular-card">
 
                 <figure class="card-img">
-                  <img src="./assets/images/popular-2.jpg" alt="Burj khalifa, dubai" loading="lazy">
+                  <img src="./assets/images/popular-2.jpg" alt="Burj Khalifa, Dubai" loading="lazy">
                 </figure>
 
                 <div class="card-content">
@@ -348,12 +352,10 @@
                   </p>
 
                   <h3 class="h3 card-title">
-                    <a href="#">Burj khalifa</a>
+                    <a href="#">Burj Khalifa</a>
                   </h3>
 
-                  <p class="card-text">
-                    Fusce hic augue velit wisi ips quibusdam pariatur, iusto.
-                  </p>
+                  <p class="card-text">Iconic skyline views, desert safaris, and world‑class shopping.</p>
 
                 </div>
 
@@ -364,7 +366,7 @@
               <div class="popular-card">
 
                 <figure class="card-img">
-                  <img src="./assets/images/popular-3.jpg" alt="Kyoto temple, japan" loading="lazy">
+                  <img src="./assets/images/popular-3.jpg" alt="Kyoto Temple, Japan" loading="lazy">
                 </figure>
 
                 <div class="card-content">
@@ -382,12 +384,10 @@
                   </p>
 
                   <h3 class="h3 card-title">
-                    <a href="#">Kyoto temple</a>
+                    <a href="#">Kyoto Temple</a>
                   </h3>
 
-                  <p class="card-text">
-                    Fusce hic augue velit wisi ips quibusdam pariatur, iusto.
-                  </p>
+                  <p class="card-text">Ancient shrines, serene gardens, and timeless cultural traditions.</p>
 
                 </div>
 
@@ -396,7 +396,7 @@
 
           </ul>
 
-          <button class="btn btn-primary">More destintion</button>
+          <button class="btn btn-primary">More destinations</button>
 
         </div>
       </section>
@@ -432,12 +432,9 @@
 
                 <div class="card-content">
 
-                  <h3 class="h3 card-title">Experience The Great Holiday On Beach</h3>
+                  <h3 class="h3 card-title">Ultimate Beach Escape</h3>
 
-                  <p class="card-text">
-                    Laoreet, voluptatum nihil dolor esse quaerat mattis explicabo maiores, est aliquet porttitor! Eaque,
-                    cras, aspernatur.
-                  </p>
+                  <p class="card-text">Relax on pristine shores, enjoy water activities, and savor coastal sunsets.</p>
 
                   <ul class="card-meta-list">
 
@@ -506,12 +503,9 @@
 
                 <div class="card-content">
 
-                  <h3 class="h3 card-title">Summer Holiday To The Oxolotan River</h3>
+                  <h3 class="h3 card-title">Riverside Adventure</h3>
 
-                  <p class="card-text">
-                    Laoreet, voluptatum nihil dolor esse quaerat mattis explicabo maiores, est aliquet porttitor! Eaque,
-                    cras, aspernatur.
-                  </p>
+                  <p class="card-text">Gentle cruises, lush landscapes, and charming towns along the riverbanks.</p>
 
                   <ul class="card-meta-list">
 
@@ -580,12 +574,9 @@
 
                 <div class="card-content">
 
-                  <h3 class="h3 card-title">Santorini Island's Weekend Vacation</h3>
+                  <h3 class="h3 card-title">Santorini Weekend Getaway</h3>
 
-                  <p class="card-text">
-                    Laoreet, voluptatum nihil dolor esse quaerat mattis explicabo maiores, est aliquet porttitor! Eaque,
-                    cras, aspernatur.
-                  </p>
+                  <p class="card-text">Whitewashed villages, azure seas, and romantic Aegean sunsets.</p>
 
                   <ul class="card-meta-list">
 
@@ -665,13 +656,9 @@
 
           <p class="section-subtitle">Photo Gallery</p>
 
-          <h2 class="h2 section-title">Photo's From Travellers</h2>
+          <h2 class="h2 section-title">Photos From Travelers</h2>
 
-          <p class="section-text">
-            Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo, rutrum. Vestibulum cumque laudantium.
-            Sit ornare
-            mollitia tenetur, aptent.
-          </p>
+          <p class="section-text">A glimpse into real journeys shared by our community around the world.</p>
 
           <ul class="gallery-list">
 
@@ -741,18 +728,7 @@
     </article>
   </main>
 
-  <!-- Search Overlay -->
-  <div class="search-overlay" data-search-overlay aria-hidden="true">
-    <div class="search-panel" role="dialog" aria-modal="true" aria-labelledby="site-search-title">
-      <button class="search-close" aria-label="Close Search" data-search-close>&times;</button>
-      <h3 id="site-search-title">Search the site</h3>
-      <div class="search-input-row">
-        <ion-icon name="search"></ion-icon>
-        <input type="search" id="site-search-input" placeholder="Search destinations, packages, gallery..." autocomplete="off">
-      </div>
-      <div class="search-results" id="site-search-results" role="list" aria-label="Search results"></div>
-    </div>
-  </div>
+  
 
 
 
@@ -769,8 +745,8 @@
 
         <div class="footer-brand">
 
-          <a href="#" class="logo">
-            <img src="./favicon.svg" alt="Tourly logo">
+          <a href="index.html" class="logo" style="display: inline-flex; align-items: center;">
+            <img src="./favicon.svg" alt="Beyond The Horizon logo" style="height: 40px; width: auto; display: block;">
           </a>
 
           <p class="footer-text">
@@ -830,7 +806,6 @@
       </div>
     </div>
 
-  <div class="footer-separator"></div>
   <div class="footer-bottom">
       <div class="container">
 
@@ -1358,6 +1333,615 @@
       
       .step::after {
         display: none;
+      }
+    }
+  </style>
+
+  <!-- Enhanced Responsive Design & Animations -->
+  <style>
+    /* Mobile-first responsive breakpoints */
+    @media (max-width: 768px) {
+      .container { padding: 0 16px; }
+      .hero-title { font-size: 2.5rem; line-height: 1.2; }
+      .hero-text { font-size: 1rem; margin-bottom: 24px; }
+      .btn-group { flex-direction: column; gap: 12px; }
+      .btn { width: 100%; }
+      .search-grid { grid-template-columns: 1fr; }
+      .popular-list, .package-list { grid-template-columns: 1fr; }
+      .gallery-list { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+      .hero-stats { flex-direction: column; gap: 16px; }
+      .stat-item { text-align: center; }
+    }
+    
+    @media (max-width: 480px) {
+      .hero-title { font-size: 2rem; }
+      .gallery-list { grid-template-columns: 1fr; }
+      .header-bottom .container { flex-direction: column; gap: 16px; }
+      .navbar-list { padding: 20px; }
+      .footer-top .container { grid-template-columns: 1fr; gap: 24px; }
+    }
+    
+    /* Enhanced animations and micro-interactions */
+    .popular-card, .package-card, .gallery-item {
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      will-change: transform, box-shadow;
+    }
+    
+    .popular-card:hover, .package-card:hover, .gallery-item:hover {
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    }
+    
+    /* Loading states and skeleton screens */
+    .loading-skeleton {
+      background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+      background-size: 200% 100%;
+      animation: loading 1.5s infinite;
+    }
+    
+    @keyframes loading {
+      0% { background-position: 200% 0; }
+      100% { background-position: -200% 0; }
+    }
+    
+    /* Enhanced button interactions */
+    .btn {
+      position: relative;
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+    
+    .btn::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      transition: width 0.6s, height 0.6s;
+    }
+    
+    .btn:hover::before {
+      width: 300px;
+      height: 300px;
+    }
+    
+    .btn:active {
+      transform: translateY(2px);
+    }
+    
+    /* Enhanced form interactions */
+    .input-field {
+      transition: all 0.3s ease;
+      border: 2px solid transparent;
+    }
+    
+    .input-field:focus {
+      border-color: #0ea5a6;
+      box-shadow: 0 0 0 4px rgba(14, 165, 166, 0.1);
+      transform: translateY(-2px);
+    }
+    
+    /* Smooth scrolling and scroll animations */
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    .scroll-reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease;
+    }
+    
+    .scroll-reveal.revealed {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+    /* Enhanced search overlay responsiveness */
+    @media (max-width: 640px) {
+      .search-panel {
+        width: 95vw;
+        padding: 20px;
+        margin: 20px;
+      }
+      
+      .search-input-row {
+        flex-direction: column;
+        gap: 12px;
+      }
+      
+      .search-results {
+        max-height: 40vh;
+      }
+    }
+    
+    /* Performance optimizations */
+    .popular-card img, .package-card img, .gallery-item img {
+      will-change: transform;
+      backface-visibility: hidden;
+    }
+    
+    /* Accessibility improvements */
+    .btn:focus, .input-field:focus, .search-btn:focus {
+      outline: 2px solid #0ea5a6;
+      outline-offset: 2px;
+    }
+    
+    /* Dark mode support (system preference) */
+    @media (prefers-color-scheme: dark) {
+      .search-overlay {
+        background: rgba(0, 0, 0, 0.8);
+      }
+      
+      .search-panel {
+        background: #1f2937;
+        color: #f9fafb;
+      }
+    }
+    
+    /* Reduced motion support */
+    @media (prefers-reduced-motion: reduce) {
+      .popular-card, .package-card, .gallery-item,
+      .btn, .input-field {
+        transition: none;
+      }
+      
+      .scroll-reveal {
+        transition: none;
+      }
+    }
+    
+    /* Enhanced mobile navigation */
+    @media (max-width: 768px) {
+      .navbar {
+        width: 100%;
+        max-width: 320px;
+      }
+      
+      .navbar-list {
+        gap: 8px;
+      }
+      
+      .navbar-link {
+        padding: 16px 20px;
+        font-size: 18px;
+      }
+    }
+    
+    /* Enhanced footer responsiveness */
+    @media (max-width: 640px) {
+      .footer-top .container {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+      
+      .footer-form .form-wrapper {
+        flex-direction: column;
+        gap: 12px;
+      }
+      
+      .footer-form input {
+        width: 100%;
+      }
+    }
+    
+    /* Enhanced hero section responsiveness */
+    @media (max-width: 768px) {
+      .hero-content {
+        text-align: center;
+        padding: 40px 20px;
+      }
+      
+      .hero-bg-img {
+        background-size: cover;
+        background-position: center;
+      }
+      
+      .scroll-indicator {
+        bottom: 20px;
+        font-size: 14px;
+      }
+    }
+    
+    /* Enhanced search form responsiveness */
+    @media (max-width: 640px) {
+      .tour-search-form {
+        padding: 20px;
+      }
+      
+      .search-header {
+        text-align: center;
+        margin-bottom: 24px;
+      }
+      
+      .search-title {
+        font-size: 1.5rem;
+      }
+    }
+    
+    /* Enhanced package cards responsiveness */
+    @media (max-width: 768px) {
+      .package-card {
+        flex-direction: column;
+      }
+      
+      .card-price {
+        position: static;
+        margin-top: 20px;
+        text-align: center;
+      }
+      
+      .card-meta-list {
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+    }
+    
+    /* Enhanced gallery responsiveness */
+    @media (max-width: 640px) {
+      .gallery-list {
+        gap: 12px;
+        padding: 0 16px;
+      }
+      
+      .gallery-item {
+        aspect-ratio: 1;
+      }
+    }
+    
+    /* Enhanced CTA section responsiveness */
+    @media (max-width: 768px) {
+      .cta .container {
+        text-align: center;
+        padding: 40px 20px;
+      }
+      
+      .cta-content {
+        margin-bottom: 24px;
+      }
+    }
+  </style>
+
+  <!-- Performance & Accessibility Enhancements -->
+  <script>
+    // Intersection Observer for scroll animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+    
+    const scrollObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+        }
+      });
+    }, observerOptions);
+    
+    // Observe elements for scroll animations
+    document.addEventListener('DOMContentLoaded', function() {
+      const scrollElements = document.querySelectorAll('.popular-card, .package-card, .gallery-item, .section-title, .section-text');
+      scrollElements.forEach(el => {
+        el.classList.add('scroll-reveal');
+        scrollObserver.observe(el);
+      });
+      
+      // Add loading states to images
+      const images = document.querySelectorAll('img[loading="lazy"]');
+      images.forEach(img => {
+        if (!img.complete) {
+          img.parentElement.classList.add('loading-skeleton');
+          img.addEventListener('load', function() {
+            this.parentElement.classList.remove('loading-skeleton');
+          });
+        }
+      });
+      
+      // Enhanced form validation
+      const forms = document.querySelectorAll('form');
+      forms.forEach(form => {
+        const inputs = form.querySelectorAll('input, textarea, select');
+        inputs.forEach(input => {
+          input.addEventListener('blur', function() {
+            validateField(this);
+          });
+          
+          input.addEventListener('input', function() {
+            if (this.classList.contains('error')) {
+              this.classList.remove('error');
+              const errorMsg = this.parentElement.querySelector('.error-message');
+              if (errorMsg) errorMsg.remove();
+            }
+          });
+        });
+      });
+    });
+    
+    // Enhanced field validation
+    function validateField(field) {
+      const value = field.value.trim();
+      let isValid = true;
+      let errorMessage = '';
+      
+      // Remove existing error styling
+      field.classList.remove('error');
+      const existingError = field.parentElement.querySelector('.error-message');
+      if (existingError) existingError.remove();
+      
+      // Validation rules
+      if (field.hasAttribute('required') && !value) {
+        isValid = false;
+        errorMessage = 'This field is required';
+      } else if (field.type === 'email' && value && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) {
+        isValid = false;
+        errorMessage = 'Please enter a valid email address';
+      } else if (field.type === 'tel' && value && !/^[\+]?[1-9][\d]{0,15}$/.test(value.replace(/\s/g, ''))) {
+        isValid = false;
+        errorMessage = 'Please enter a valid phone number';
+      }
+      
+      // Apply error styling and message
+      if (!isValid) {
+        field.classList.add('error');
+        const errorDiv = document.createElement('div');
+        errorDiv.className = 'error-message';
+        errorDiv.textContent = errorMessage;
+        errorDiv.style.cssText = 'color: #dc2626; font-size: 14px; margin-top: 4px;';
+        field.parentElement.appendChild(errorDiv);
+      }
+      
+      return isValid;
+    }
+    
+    // Enhanced search functionality
+    let searchTimeout;
+    const searchInput = document.getElementById('site-search-input');
+    if (searchInput) {
+      searchInput.addEventListener('input', function() {
+        clearTimeout(searchTimeout);
+        searchTimeout = setTimeout(() => {
+          const query = this.value.trim();
+          if (query.length >= 2) {
+            performSearch(query);
+          } else {
+            clearSearchResults();
+          }
+        }, 300);
+      });
+    }
+    
+    function performSearch(query) {
+      // Enhanced search with better results
+      const results = document.getElementById('site-search-results');
+      if (!results) return;
+      
+      // Simulate search results
+      const mockResults = [
+        { title: 'Beach Holiday Package', type: 'Package', price: '$750', category: 'Beach' },
+        { title: 'Dubai Adventure', type: 'Destination', price: '$1200', category: 'City' },
+        { title: 'Kyoto Temple Tour', type: 'Destination', price: '$980', category: 'Cultural' },
+        { title: 'River Cruise Experience', type: 'Package', price: '$520', category: 'Cruise' }
+      ].filter(item => 
+        item.title.toLowerCase().includes(query.toLowerCase()) ||
+        item.category.toLowerCase().includes(query.toLowerCase())
+      );
+      
+      displaySearchResults(mockResults);
+    }
+    
+    function displaySearchResults(results) {
+      const resultsContainer = document.getElementById('site-search-results');
+      if (!resultsContainer) return;
+      
+      resultsContainer.innerHTML = '';
+      
+      if (results.length === 0) {
+        resultsContainer.innerHTML = '<div class="search-result-item"><span>No results found</span></div>';
+        return;
+      }
+      
+      results.forEach(result => {
+        const resultDiv = document.createElement('div');
+        resultDiv.className = 'search-result-item';
+        resultDiv.innerHTML = `
+          <div>
+            <strong>${result.title}</strong>
+            <div class="meta">${result.type} • ${result.category} • ${result.price}</div>
+          </div>
+          <a class="btn btn-primary" href="#" onclick="handleSearchResult('${result.title}')">View</a>
+        `;
+        resultsContainer.appendChild(resultDiv);
+      });
+    }
+    
+    function handleSearchResult(title) {
+      // Handle search result click
+      console.log('Search result clicked:', title);
+      // You can add navigation logic here
+    }
+    
+    function clearSearchResults() {
+      const results = document.getElementById('site-search-results');
+      if (results) {
+        results.innerHTML = '';
+      }
+    }
+    
+    // Enhanced mobile menu
+    const mobileMenuBtn = document.querySelector('[data-nav-open-btn]');
+    const mobileMenu = document.querySelector('[data-navbar]');
+    
+    if (mobileMenuBtn && mobileMenu) {
+      mobileMenuBtn.addEventListener('click', function() {
+        document.body.style.overflow = 'hidden';
+      });
+      
+      const closeBtn = document.querySelector('[data-nav-close-btn]');
+      if (closeBtn) {
+        closeBtn.addEventListener('click', function() {
+          document.body.style.overflow = '';
+        });
+      }
+    }
+    
+    // Performance monitoring
+    window.addEventListener('load', function() {
+      // Log performance metrics
+      if ('performance' in window) {
+        const perfData = performance.getEntriesByType('navigation')[0];
+        console.log('Page load time:', perfData.loadEventEnd - perfData.loadEventStart, 'ms');
+      }
+    });
+  </script>
+
+  <!-- Enhanced Responsive CSS -->
+  <style>
+    /* Enhanced Responsive Design & Mobile-First Approach */
+    @media (max-width: 768px) {
+      .container { padding: 0 16px; }
+      .hero-title { font-size: 2.5rem; line-height: 1.2; }
+      .hero-text { font-size: 1rem; margin-bottom: 24px; }
+      .btn-group { flex-direction: column; gap: 12px; }
+      .btn { width: 100%; }
+      .search-grid { grid-template-columns: 1fr; }
+      .popular-list, .package-list { grid-template-columns: 1fr; }
+      .gallery-list { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+      .hero-stats { flex-direction: column; gap: 16px; }
+      .stat-item { text-align: center; }
+      .navbar { width: 100%; max-width: 320px; }
+      .navbar-list { gap: 8px; }
+      .navbar-link { padding: 16px 20px; font-size: 18px; }
+      .package-card { flex-direction: column; }
+      .card-price { position: static; margin-top: 20px; text-align: center; }
+      .card-meta-list { justify-content: center; flex-wrap: wrap; }
+      .cta .container { text-align: center; padding: 40px 20px; }
+      .cta-content { margin-bottom: 24px; }
+      .hero-content { text-align: center; padding: 40px 20px; }
+      .hero-bg-img { background-size: cover; background-position: center; }
+      .scroll-indicator { bottom: 20px; font-size: 14px; }
+      
+      /* Adventure search section mobile */
+      .tour-search {
+        margin: 40px 16px;
+        padding: 60px 20px;
+      }
+      
+      .tour-search .search-title {
+        font-size: 2rem !important;
+      }
+      
+      .tour-search .search-subtitle {
+        font-size: 1rem !important;
+      }
+      
+      .tour-search .tour-search-form {
+        padding: 30px 20px;
+      }
+      
+      .tour-search .search-grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .hero-title { font-size: 2rem; }
+      .gallery-list { grid-template-columns: 1fr; }
+      .header-bottom .container { flex-direction: column; gap: 16px; }
+      .footer-top .container { grid-template-columns: 1fr; gap: 24px; text-align: center; }
+      .footer-form .form-wrapper { flex-direction: column; gap: 12px; }
+      .footer-form input { width: 100%; }
+    }
+    
+    @media (max-width: 640px) {
+      .search-panel { width: 95vw; padding: 20px; margin: 20px; }
+      .search-input-row { flex-direction: column; gap: 12px; }
+      .search-results { max-height: 40vh; }
+      .tour-search-form { padding: 20px; }
+      .search-header { text-align: center; margin-bottom: 24px; }
+      .search-title { font-size: 1.5rem; }
+      .gallery-list { gap: 12px; padding: 0 16px; }
+      .gallery-item { aspect-ratio: 1; }
+    }
+    
+    /* Enhanced animations and micro-interactions */
+    .popular-card, .package-card, .gallery-item {
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      will-change: transform, box-shadow;
+    }
+    
+    .popular-card:hover, .package-card:hover, .gallery-item:hover {
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    }
+    
+    /* Enhanced button interactions */
+    .btn {
+      position: relative;
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+    
+    .btn:active {
+      transform: translateY(2px);
+    }
+    
+    /* Enhanced form interactions */
+    .input-field {
+      transition: all 0.3s ease;
+      border: 2px solid transparent;
+    }
+    
+    .input-field:focus {
+      border-color: #0ea5a6;
+      box-shadow: 0 0 0 4px rgba(14, 165, 166, 0.1);
+      transform: translateY(-2px);
+    }
+    
+    /* Smooth scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    /* Loading states */
+    .loading-skeleton {
+      background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+      background-size: 200% 100%;
+      animation: loading 1.5s infinite;
+    }
+    
+    @keyframes loading {
+      0% { background-position: 200% 0; }
+      100% { background-position: -200% 0; }
+    }
+    
+    /* Accessibility improvements */
+    .btn:focus, .input-field:focus, .search-btn:focus {
+      outline: 2px solid #0ea5a6;
+      outline-offset: 2px;
+    }
+    
+    /* Dark mode support */
+    @media (prefers-color-scheme: dark) {
+      .search-overlay {
+        background: rgba(0, 0, 0, 0.8);
+      }
+      
+      .search-panel {
+        background: #1f2937;
+        color: #f9fafb;
+      }
+    }
+    
+    /* Reduced motion support */
+    @media (prefers-reduced-motion: reduce) {
+      .popular-card, .package-card, .gallery-item,
+      .btn, .input-field {
+        transition: none;
       }
     }
   </style>
