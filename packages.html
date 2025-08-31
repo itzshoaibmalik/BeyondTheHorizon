@@ -96,7 +96,7 @@
                 <p class="card-text">Relax on pristine shores, enjoy water activities, and savor coastal sunsets.</p>
               </div>
               <div class="card-price">
-                <p class="price">$750 <span>/ per person</span></p>
+                <p class="price">₹750 <span>/ per person</span></p>
                 <button class="btn btn-secondary">Book Now</button>
               </div>
             </div>
@@ -132,7 +132,7 @@
                   <div class="card-rating"><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon
                       name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon></div>
                 </div>
-                <p class="price">$680 <span>/ per person</span></p>
+                <p class="price">₹680 <span>/ per person</span></p>
                 <button class="btn btn-secondary">Book Now</button>
               </div>
             </div>
@@ -170,7 +170,7 @@
                       name="star"></ionicon><ion-icon name="star"></ionicon><ion-icon name="star"></ionicon>
                   </div>
                 </div>
-                <p class="price">$840 <span>/ per person</span></p>
+                <p class="price">₹840 <span>/ per person</span></p>
                 <button class="btn btn-secondary">Book Now</button>
               </div>
             </div>
@@ -208,7 +208,7 @@
                         name="star"></ionicon><ion-icon name="star"></ionicon><ion-icon name="star"></ionicon>
                   </div>
                 </div>
-                <p class="price">$590 <span>/ per person</span></p>
+                <p class="price">₹590 <span>/ per person</span></p>
                 <button class="btn btn-secondary">Book Now</button>
               </div>
             </div>
@@ -246,7 +246,7 @@
                         name="star"></ionicon><ion-icon name="star"></ionicon><ion-icon name="star"></ionicon>
                   </div>
                 </div>
-                <p class="price">$720 <span>/ per person</span></p>
+                <p class="price">₹720 <span>/ per person</span></p>
                 <button class="btn btn-secondary">Book Now</button>
               </div>
             </div>
@@ -260,7 +260,7 @@
                 <p class="card-text">Gentle cruises, lush landscapes, and charming towns along the riverbanks.</p>
               </div>
               <div class="card-price">
-                <p class="price">$520 <span>/ per person</span></p>
+                <p class="price">₹520 <span>/ per person</span></p>
                 <button class="btn btn-secondary">Book Now</button>
               </div>
             </div>
@@ -451,7 +451,7 @@
 
     function openBookingModal(card) {
       const title = card.querySelector('.card-title, .card-title a')?.textContent || 'Travel Package';
-      const price = card.querySelector('.price')?.textContent || '$500';
+      const price = card.querySelector('.price')?.textContent || '₹500';
       const image = card.querySelector('img')?.src || './assets/images/packege-1.jpg';
 
       currentBooking = { title, price, image, type: 'package' };
@@ -459,7 +459,7 @@
     }
 
     function openGeneralBookingModal() {
-      currentBooking = { title: 'Custom Travel Package', price: '$800', type: 'custom' };
+      currentBooking = { title: 'Custom Travel Package', price: '₹800', type: 'custom' };
       showBookingModal();
     }
 

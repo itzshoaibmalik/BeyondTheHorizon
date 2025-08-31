@@ -609,7 +609,7 @@
                   </div>
 
                   <p class="price">
-                    $750
+                    ₹750
                     <span>/ per person</span>
                   </p>
 
@@ -680,7 +680,7 @@
                   </div>
 
                   <p class="price">
-                    $520
+                    ₹520
                     <span>/ per person</span>
                   </p>
 
@@ -751,7 +751,7 @@
                   </div>
 
                   <p class="price">
-                    $660
+                    ₹660
                     <span>/ per person</span>
                   </p>
 
@@ -1016,7 +1016,7 @@
 
     function openBookingModal(card) {
       const title = card.querySelector('.card-title, .card-title a')?.textContent || 'Travel Package';
-      const price = card.querySelector('.price')?.textContent || '$500';
+      const price = card.querySelector('.price')?.textContent || '₹500';
       const image = card.querySelector('img')?.src || './assets/images/packege-1.jpg';
 
       currentBooking = { title, price, image, type: 'package' };
@@ -1024,7 +1024,7 @@
     }
 
     function openGeneralBookingModal() {
-      currentBooking = { title: 'Custom Travel Package', price: '$800', type: 'custom' };
+      currentBooking = { title: 'Custom Travel Package', price: '₹800', type: 'custom' };
       showBookingModal();
     }
 
@@ -1919,10 +1919,10 @@
 
       // Simulate search results
       const mockResults = [
-        { title: 'Beach Holiday Package', type: 'Package', price: '$750', category: 'Beach' },
-        { title: 'Dubai Adventure', type: 'Destination', price: '$1200', category: 'City' },
-        { title: 'Kyoto Temple Tour', type: 'Destination', price: '$980', category: 'Cultural' },
-        { title: 'River Cruise Experience', type: 'Package', price: '$520', category: 'Cruise' }
+        { title: 'Beach Holiday Package', type: 'Package', price: '₹750', category: 'Beach' },
+        { title: 'Dubai Adventure', type: 'Destination', price: '₹1200', category: 'City' },
+        { title: 'Kyoto Temple Tour', type: 'Destination', price: '₹980', category: 'Cultural' },
+        { title: 'River Cruise Experience', type: 'Package', price: '₹520', category: 'Cruise' }
       ].filter(item =>
         item.title.toLowerCase().includes(query.toLowerCase()) ||
         item.category.toLowerCase().includes(query.toLowerCase())
