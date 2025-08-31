@@ -28,7 +28,8 @@
 </head>
 
 <body id="top">
-  <a href="#main" class="skip-link" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to main content</a>
+  <a href="#main" class="skip-link"
+    style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to main content</a>
 
   <!-- 
     - #HEADER
@@ -104,7 +105,8 @@
           <div class="navbar-top">
 
             <a href="index.html" class="logo">
-              <img src="./favicon.svg" alt="Beyond The Horizon logo"><span class="brand-name" aria-label="Site name" style="margin-left:8px;font-weight:800;color:#0ea5a6;">Beyond The Horizon</span>
+              <img src="./favicon.svg" alt="Beyond The Horizon logo"><span class="brand-name" aria-label="Site name"
+                style="margin-left:8px;font-weight:800;color:#0ea5a6;">Beyond The Horizon</span>
             </a>
 
             <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
@@ -175,7 +177,7 @@
             <h3 class="h1 hero-title animate-fade-in">Adventure Starts Here</h3>
 
             <p class="hero-text animate-fade-in-delay">
-              Discover breathtaking destinations, create unforgettable memories, and embark on extraordinary adventures 
+              Discover breathtaking destinations, create unforgettable memories, and embark on extraordinary adventures
               that will transform your perspective on travel and life itself.
             </p>
 
@@ -217,56 +219,74 @@
         - #TOUR SEARCH
       -->
 
-      <section class="tour-search" style="background: linear-gradient(135deg, #0ea5a6 0%, #0891b2 100%); padding: 100px 0; margin: 0 0 80px 0; position: relative; overflow: hidden;">
+      <section class="tour-search"
+        style="background: linear-gradient(135deg, #0ea5a6 0%, #0891b2 100%); padding: 100px 0; margin: 0 0 80px 0; position: relative; overflow: hidden;">
         <!-- Background Pattern -->
-        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 100 100\'%3E%3Cdefs%3E%3Cpattern id=\'grain\' width=\'100\' height=\'100\' patternUnits=\'userSpaceOnUse\'%3E%3Ccircle cx=\'50\' cy=\'50\' r=\'1\' fill=\'rgba(255,255,255,0.1)\'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width=\'100\' height=\'100\' fill=\'url(%23grain)\'/%3E%3C/svg%3E'); opacity: 0.3;"></div>
-        
+        <div
+          style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 100 100\'%3E%3Cdefs%3E%3Cpattern id=\'grain\' width=\'100\' height=\'100\' patternUnits=\'userSpaceOnUse\'%3E%3Ccircle cx=\'50\' cy=\'50\' r=\'1\' fill=\'rgba(255,255,255,0.1)\'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width=\'100\' height=\'100\' fill=\'url(%23grain)\'/%3E%3C/svg%3E'); opacity: 0.3;">
+        </div>
+
         <div class="container" style="position: relative; z-index: 2;">
 
           <div class="search-header" style="text-align: center; margin-bottom: 60px;">
-            <h2 class="search-title" style="color: white; font-size: 3.5rem; margin-bottom: 20px; font-weight: 800; text-shadow: 0 4px 8px rgba(0,0,0,0.1);">Find Your Perfect Adventure</h2>
-            <p class="search-subtitle" style="color: rgba(255,255,255,0.95); font-size: 1.3rem; max-width: 700px; margin: 0 auto; line-height: 1.6;">Search from thousands of destinations worldwide and discover your next unforgettable journey</p>
+            <h2 class="search-title"
+              style="color: white; font-size: 3.5rem; margin-bottom: 20px; font-weight: 800; text-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+              Find Your Perfect Adventure</h2>
+            <p class="search-subtitle"
+              style="color: rgba(255,255,255,0.95); font-size: 1.3rem; max-width: 700px; margin: 0 auto; line-height: 1.6;">
+              Search from thousands of destinations worldwide and discover your next unforgettable journey</p>
           </div>
 
-          <form action="" class="tour-search-form" style="background: rgba(255,255,255,0.95); backdrop-filter: blur(20px); padding: 50px; border-radius: 24px; box-shadow: 0 25px 80px rgba(0,0,0,0.15); max-width: 1100px; margin: 0 auto; border: 1px solid rgba(255,255,255,0.2);">
-            <div class="search-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-bottom: 40px;">
+          <form action="" class="tour-search-form"
+            style="background: rgba(255,255,255,0.95); backdrop-filter: blur(20px); padding: 50px; border-radius: 24px; box-shadow: 0 25px 80px rgba(0,0,0,0.15); max-width: 1100px; margin: 0 auto; border: 1px solid rgba(255,255,255,0.2);">
+            <div class="search-grid"
+              style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-bottom: 40px;">
               <div class="input-wrapper">
-                <label for="destination" class="input-label" style="color: #1f2937; font-weight: 700; margin-bottom: 12px; display: flex; align-items: center; gap: 10px; font-size: 1.1rem;">
+                <label for="destination" class="input-label"
+                  style="color: #1f2937; font-weight: 700; margin-bottom: 12px; display: flex; align-items: center; gap: 10px; font-size: 1.1rem;">
                   <ion-icon name="location-outline" style="color: #0ea5a6; font-size: 1.3rem;"></ion-icon>
                   Destination
                 </label>
-                <input type="text" name="destination" id="destination" required 
-                       placeholder="Where do you want to go?" class="input-field" style="border: 2px solid #e5e7eb; border-radius: 16px; padding: 18px 20px; font-size: 1.1rem; transition: all 0.3s ease; width: 100%; box-sizing: border-box; background: white; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+                <input type="text" name="destination" id="destination" required placeholder="Where do you want to go?"
+                  class="input-field"
+                  style="border: 2px solid #e5e7eb; border-radius: 16px; padding: 18px 20px; font-size: 1.1rem; transition: all 0.3s ease; width: 100%; box-sizing: border-box; background: white; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
               </div>
 
               <div class="input-wrapper">
-                <label for="people" class="input-label" style="color: #1f2937; font-weight: 700; margin-bottom: 12px; display: flex; align-items: center; gap: 10px; font-size: 1.1rem;">
+                <label for="people" class="input-label"
+                  style="color: #1f2937; font-weight: 700; margin-bottom: 12px; display: flex; align-items: center; gap: 10px; font-size: 1.1rem;">
                   <ion-icon name="people-outline" style="color: #0ea5a6; font-size: 1.3rem;"></ion-icon>
                   Travelers
                 </label>
-                <input type="number" name="people" id="people" required 
-                       placeholder="Number of people" class="input-field" min="1" max="20" style="border: 2px solid #e5e7eb; border-radius: 16px; padding: 18px 20px; font-size: 1.1rem; transition: all 0.3s ease; width: 100%; box-sizing: border-box; background: white; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+                <input type="number" name="people" id="people" required placeholder="Number of people"
+                  class="input-field" min="1" max="20"
+                  style="border: 2px solid #e5e7eb; border-radius: 16px; padding: 18px 20px; font-size: 1.1rem; transition: all 0.3s ease; width: 100%; box-sizing: border-box; background: white; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
               </div>
 
               <div class="input-wrapper">
-                <label for="checkin" class="input-label" style="color: #1f2937; font-weight: 700; margin-bottom: 12px; display: flex; align-items: center; gap: 10px; font-size: 1.1rem;">
+                <label for="checkin" class="input-label"
+                  style="color: #1f2937; font-weight: 700; margin-bottom: 12px; display: flex; align-items: center; gap: 10px; font-size: 1.1rem;">
                   <ion-icon name="calendar-outline" style="color: #0ea5a6; font-size: 1.3rem;"></ion-icon>
                   Departure Date
                 </label>
-                <input type="date" name="checkin" id="checkin" required class="input-field" style="border: 2px solid #e5e7eb; border-radius: 16px; padding: 18px 20px; font-size: 1.1rem; transition: all 0.3s ease; width: 100%; box-sizing: border-box; background: white; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+                <input type="date" name="checkin" id="checkin" required class="input-field"
+                  style="border: 2px solid #e5e7eb; border-radius: 16px; padding: 18px 20px; font-size: 1.1rem; transition: all 0.3s ease; width: 100%; box-sizing: border-box; background: white; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
               </div>
 
               <div class="input-wrapper">
-                <label for="checkout" class="input-label" style="color: #1f2937; font-weight: 700; margin-bottom: 12px; display: flex; align-items: center; gap: 10px; font-size: 1.1rem;">
+                <label for="checkout" class="input-label"
+                  style="color: #1f2937; font-weight: 700; margin-bottom: 12px; display: flex; align-items: center; gap: 10px; font-size: 1.1rem;">
                   <ion-icon name="calendar-outline" style="color: #0ea5a6; font-size: 1.3rem;"></ion-icon>
                   Return Date
                 </label>
-                <input type="date" name="checkout" id="checkout" required class="input-field" style="border: 2px solid #e5e7eb; border-radius: 16px; padding: 18px 20px; font-size: 1.1rem; transition: all 0.3s ease; width: 100%; box-sizing: border-box; background: white; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+                <input type="date" name="checkout" id="checkout" required class="input-field"
+                  style="border: 2px solid #e5e7eb; border-radius: 16px; padding: 18px 20px; font-size: 1.1rem; transition: all 0.3s ease; width: 100%; box-sizing: border-box; background: white; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
               </div>
             </div>
 
             <div style="text-align: center;">
-              <button type="submit" class="btn btn-primary search-btn" style="background: linear-gradient(135deg, #0ea5a6 0%, #0891b2 100%); border: none; color: #fff; padding: 16px 28px; border-radius: 9999px; font-size: 1.05rem; font-weight: 700; cursor: pointer; transition: transform 0.2s ease, box-shadow 0.2s ease; box-shadow: 0 10px 28px rgba(14, 165, 166, 0.35); position: relative; overflow: hidden; display: inline-flex; align-items: center; gap: 10px; white-space: nowrap;">
+              <button type="submit" class="btn btn-primary search-btn"
+                style="background: linear-gradient(135deg, #0ea5a6 0%, #0891b2 100%); border: none; color: #fff; padding: 16px 28px; border-radius: 9999px; font-size: 1.05rem; font-weight: 700; cursor: pointer; transition: transform 0.2s ease, box-shadow 0.2s ease; box-shadow: 0 10px 28px rgba(14, 165, 166, 0.35); position: relative; overflow: hidden; display: inline-flex; align-items: center; gap: 10px; white-space: nowrap;">
                 <ion-icon name="search-outline" style="font-size: 1.25rem;"></ion-icon>
                 <span>Search Adventures</span>
               </button>
@@ -292,7 +312,7 @@
           <h2 class="h2 section-title">Popular Destinations</h2>
 
           <p class="section-text">
-            Explore our handpicked selection of the world's most breathtaking destinations, 
+            Explore our handpicked selection of the world's most breathtaking destinations,
             each offering unique experiences and unforgettable memories.
           </p>
 
@@ -426,6 +446,80 @@
               </div>
             </li>
 
+            <li>
+              <div class="popular-card">
+
+                <figure class="card-img">
+                  <img src="./assets/images/gallery-4.jpg" alt="Delhi, India" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <p class="card-subtitle">
+                    <a href="#">India</a>
+                  </p>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">
+                      Goa
+                    </a>
+                  </h3>
+
+                  <p class="card-text">
+                    Beaches, sunsets, and vibrant culture.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="popular-card">
+
+                <figure class="card-img">
+                  <img src="./assets/images/gallery-2.jpg" alt="Delhi, India" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <p class="card-subtitle">
+                    <a href="#">India</a>
+                  </p>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">
+                      Jammu
+                    </a>
+                  </h3>
+
+                  <p class="card-text">
+                    Snow-capped mountains, serene lakes, and ancient temples.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+
+
           </ul>
 
           <button class="btn btn-primary">More destinations</button>
@@ -449,7 +543,7 @@
           <h2 class="h2 section-title">Our Premium Packages</h2>
 
           <p class="section-text">
-            Immerse yourself in carefully crafted travel experiences designed to exceed your expectations 
+            Immerse yourself in carefully crafted travel experiences designed to exceed your expectations
             and create memories that will last a lifetime.
           </p>
 
@@ -760,7 +854,7 @@
     </article>
   </main>
 
-  
+
 
 
 
@@ -778,12 +872,14 @@
         <div class="footer-brand">
 
           <a href="index.html" class="logo" style="display: inline-flex; align-items: center;">
-            <img src="./favicon.svg" alt="Beyond The Horizon logo" style="height: 40px; width: auto; display: block;"><span class="brand-name" aria-label="Site name" style="margin-left:8px;font-weight:800;color:#0ea5a6;">Beyond The Horizon</span>
+            <img src="./favicon.svg" alt="Beyond The Horizon logo"
+              style="height: 40px; width: auto; display: block;"><span class="brand-name" aria-label="Site name"
+              style="margin-left:8px;font-weight:800;color:#0ea5a6;">Beyond The Horizon</span>
           </a>
 
           <p class="footer-text">
-            Beyond The Horizon is your trusted partner in creating extraordinary travel experiences. 
-            We specialize in crafting unforgettable journeys that connect you with the world's most 
+            Beyond The Horizon is your trusted partner in creating extraordinary travel experiences.
+            We specialize in crafting unforgettable journeys that connect you with the world's most
             beautiful destinations and cultures.
           </p>
 
@@ -838,7 +934,7 @@
       </div>
     </div>
 
-  <div class="footer-bottom">
+    <div class="footer-bottom">
       <div class="container">
 
         <p class="copyright">&copy; 2025 Beyond The Horizon. All rights reserved.</p>
@@ -894,11 +990,11 @@
     let paymentStep = 0;
 
     // Initialize booking system
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
       // Add click handlers to all Book Now buttons
       document.querySelectorAll('.btn-secondary, .btn-primary').forEach(btn => {
         if (btn.textContent.toLowerCase().includes('book')) {
-          btn.addEventListener('click', function(e) {
+          btn.addEventListener('click', function (e) {
             e.preventDefault();
             const card = this.closest('.package-card, .popular-card');
             if (card) {
@@ -911,7 +1007,7 @@
       // Add click handler to main Book Now button
       const mainBookBtn = document.querySelector('.header-bottom .btn-primary');
       if (mainBookBtn) {
-        mainBookBtn.addEventListener('click', function(e) {
+        mainBookBtn.addEventListener('click', function (e) {
           e.preventDefault();
           openGeneralBookingModal();
         });
@@ -922,7 +1018,7 @@
       const title = card.querySelector('.card-title, .card-title a')?.textContent || 'Travel Package';
       const price = card.querySelector('.price')?.textContent || '$500';
       const image = card.querySelector('img')?.src || './assets/images/packege-1.jpg';
-      
+
       currentBooking = { title, price, image, type: 'package' };
       showBookingModal();
     }
@@ -1001,12 +1097,12 @@
           </div>
         </div>
       `;
-      
+
       document.body.appendChild(modal);
       setTimeout(() => modal.classList.add('active'), 10);
-      
+
       // Form submission
-      document.getElementById('booking-form').addEventListener('submit', function(e) {
+      document.getElementById('booking-form').addEventListener('submit', function (e) {
         e.preventDefault();
         const formData = new FormData(this);
         const bookingData = Object.fromEntries(formData.entries());
@@ -1069,30 +1165,30 @@
           </div>
         </div>
       `;
-      
+
       document.body.appendChild(modal);
       setTimeout(() => modal.classList.add('active'), 10);
-      
+
       // Format card number
       const cardInput = modal.querySelector('input[name="cardNumber"]');
-      cardInput.addEventListener('input', function(e) {
+      cardInput.addEventListener('input', function (e) {
         let value = e.target.value.replace(/\D/g, '');
         value = value.replace(/(\d{4})(?=\d)/g, '$1 ');
         e.target.value = value;
       });
-      
+
       // Format expiry date
       const expiryInput = modal.querySelector('input[name="expiry"]');
-      expiryInput.addEventListener('input', function(e) {
+      expiryInput.addEventListener('input', function (e) {
         let value = e.target.value.replace(/\D/g, '');
         if (value.length >= 2) {
           value = value.slice(0, 2) + '/' + value.slice(2);
         }
         e.target.value = value;
       });
-      
+
       // Payment form submission
-      document.getElementById('payment-form').addEventListener('submit', function(e) {
+      document.getElementById('payment-form').addEventListener('submit', function (e) {
         e.preventDefault();
         processPayment();
       });
@@ -1101,7 +1197,7 @@
     function processPayment() {
       paymentStep = 1;
       updatePaymentSteps();
-      
+
       // Simulate payment processing
       setTimeout(() => {
         paymentStep = 2;
@@ -1159,7 +1255,8 @@
 
   <style>
     /* Booking & Payment Modal Styles */
-    .booking-modal, .payment-modal {
+    .booking-modal,
+    .payment-modal {
       position: fixed;
       inset: 0;
       background: rgba(0, 0, 0, 0.7);
@@ -1170,12 +1267,14 @@
       opacity: 0;
       transition: opacity 0.3s ease;
     }
-    
-    .booking-modal.active, .payment-modal.active {
+
+    .booking-modal.active,
+    .payment-modal.active {
       opacity: 1;
     }
-    
-    .booking-panel, .payment-panel {
+
+    .booking-panel,
+    .payment-panel {
       background: white;
       border-radius: 16px;
       padding: 32px;
@@ -1187,13 +1286,14 @@
       transform: scale(0.9);
       transition: transform 0.3s ease;
     }
-    
+
     .booking-modal.active .booking-panel,
     .payment-modal.active .payment-panel {
       transform: scale(1);
     }
-    
-    .booking-close, .payment-close {
+
+    .booking-close,
+    .payment-close {
       position: absolute;
       top: 16px;
       right: 20px;
@@ -1203,7 +1303,7 @@
       cursor: pointer;
       color: #666;
     }
-    
+
     .package-summary {
       display: flex;
       gap: 16px;
@@ -1213,43 +1313,43 @@
       border-radius: 12px;
       margin-bottom: 24px;
     }
-    
+
     .package-summary img {
       width: 80px;
       height: 60px;
       object-fit: cover;
       border-radius: 8px;
     }
-    
+
     .package-summary .price {
       color: #0ea5a6;
       font-weight: 700;
       font-size: 1.2rem;
       margin: 0;
     }
-    
+
     .form-row {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 16px;
       margin-bottom: 16px;
     }
-    
+
     .form-row .full-width {
       grid-column: 1 / -1;
     }
-    
+
     .input-group {
       display: flex;
       flex-direction: column;
     }
-    
+
     .input-group label {
       margin-bottom: 6px;
       font-weight: 600;
       color: #374151;
     }
-    
+
     .input-group input,
     .input-group select,
     .input-group textarea {
@@ -1258,7 +1358,7 @@
       border-radius: 8px;
       font-size: 16px;
     }
-    
+
     .input-group input:focus,
     .input-group select:focus,
     .input-group textarea:focus {
@@ -1266,7 +1366,7 @@
       border-color: #0ea5a6;
       box-shadow: 0 0 0 3px rgba(14, 165, 166, 0.1);
     }
-    
+
     /* Payment Steps */
     .payment-steps {
       display: flex;
@@ -1274,7 +1374,7 @@
       margin-bottom: 24px;
       padding: 0 20px;
     }
-    
+
     .step {
       flex: 1;
       text-align: center;
@@ -1285,12 +1385,12 @@
       color: #6b7280;
       position: relative;
     }
-    
+
     .step.active {
       background: #0ea5a6;
       color: white;
     }
-    
+
     .step:not(:last-child)::after {
       content: '';
       position: absolute;
@@ -1302,17 +1402,17 @@
       background: #e5e7eb;
       z-index: -1;
     }
-    
+
     .step.active::after {
       background: #0ea5a6;
     }
-    
+
     /* Confirmation */
     .confirmation {
       text-align: center;
       padding: 32px 16px;
     }
-    
+
     .success-icon {
       width: 80px;
       height: 80px;
@@ -1325,7 +1425,7 @@
       font-size: 40px;
       margin: 0 auto 24px;
     }
-    
+
     .confirmation-details {
       background: #f8fafc;
       padding: 20px;
@@ -1333,34 +1433,34 @@
       margin: 24px 0;
       text-align: left;
     }
-    
+
     .confirmation-details p {
       margin: 8px 0;
       color: #374151;
     }
-    
+
     .confirmation-note {
       color: #6b7280;
       font-style: italic;
       margin: 16px 0;
     }
-    
+
     .total-price {
       font-size: 1.3rem;
       font-weight: 700;
       color: #0ea5a6;
     }
-    
+
     @media (max-width: 640px) {
       .form-row {
         grid-template-columns: 1fr;
       }
-      
+
       .payment-steps {
         flex-direction: column;
         gap: 8px;
       }
-      
+
       .step::after {
         display: none;
       }
@@ -1371,56 +1471,116 @@
   <style>
     /* Mobile-first responsive breakpoints */
     @media (max-width: 768px) {
-      .container { padding: 0 16px; }
-      .hero-title { font-size: 2.5rem; line-height: 1.2; }
-      .hero-text { font-size: 1rem; margin-bottom: 24px; }
-      .btn-group { flex-direction: column; gap: 12px; }
-      .btn { width: 100%; }
-      .search-grid { grid-template-columns: 1fr; }
-      .popular-list, .package-list { grid-template-columns: 1fr; }
-      .gallery-list { grid-template-columns: repeat(2, 1fr); gap: 12px; }
-      .hero-stats { flex-direction: column; gap: 16px; }
-      .stat-item { text-align: center; }
+      .container {
+        padding: 0 16px;
+      }
+
+      .hero-title {
+        font-size: 2.5rem;
+        line-height: 1.2;
+      }
+
+      .hero-text {
+        font-size: 1rem;
+        margin-bottom: 24px;
+      }
+
+      .btn-group {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .search-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .popular-list,
+      .package-list {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery-list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+      }
+
+      .hero-stats {
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      .stat-item {
+        text-align: center;
+      }
     }
-    
+
     @media (max-width: 480px) {
-      .hero-title { font-size: 2rem; }
-      .gallery-list { grid-template-columns: 1fr; }
-      .header-bottom .container { flex-direction: column; gap: 16px; }
-      .navbar-list { padding: 20px; }
-      .footer-top .container { grid-template-columns: 1fr; gap: 24px; }
+      .hero-title {
+        font-size: 2rem;
+      }
+
+      .gallery-list {
+        grid-template-columns: 1fr;
+      }
+
+      .header-bottom .container {
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      .navbar-list {
+        padding: 20px;
+      }
+
+      .footer-top .container {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
     }
-    
+
     /* Enhanced animations and micro-interactions */
-    .popular-card, .package-card, .gallery-item {
+    .popular-card,
+    .package-card,
+    .gallery-item {
       transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
       will-change: transform, box-shadow;
     }
-    
-    .popular-card:hover, .package-card:hover, .gallery-item:hover {
+
+    .popular-card:hover,
+    .package-card:hover,
+    .gallery-item:hover {
       transform: translateY(-8px) scale(1.02);
       box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
     }
-    
+
     /* Loading states and skeleton screens */
     .loading-skeleton {
       background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
       background-size: 200% 100%;
       animation: loading 1.5s infinite;
     }
-    
+
     @keyframes loading {
-      0% { background-position: 200% 0; }
-      100% { background-position: -200% 0; }
+      0% {
+        background-position: 200% 0;
+      }
+
+      100% {
+        background-position: -200% 0;
+      }
     }
-    
+
     /* Enhanced button interactions */
     .btn {
       position: relative;
       overflow: hidden;
       transition: all 0.3s ease;
     }
-    
+
     .btn::before {
       content: '';
       position: absolute;
@@ -1433,44 +1593,44 @@
       transform: translate(-50%, -50%);
       transition: width 0.6s, height 0.6s;
     }
-    
+
     .btn:hover::before {
       width: 300px;
       height: 300px;
     }
-    
+
     .btn:active {
       transform: translateY(2px);
     }
-    
+
     /* Enhanced form interactions */
     .input-field {
       transition: all 0.3s ease;
       border: 2px solid transparent;
     }
-    
+
     .input-field:focus {
       border-color: #0ea5a6;
       box-shadow: 0 0 0 4px rgba(14, 165, 166, 0.1);
       transform: translateY(-2px);
     }
-    
+
     /* Smooth scrolling and scroll animations */
     html {
       scroll-behavior: smooth;
     }
-    
+
     .scroll-reveal {
       opacity: 0;
       transform: translateY(30px);
       transition: all 0.8s ease;
     }
-    
+
     .scroll-reveal.revealed {
       opacity: 1;
       transform: translateY(0);
     }
-    
+
     /* Enhanced search overlay responsiveness */
     @media (max-width: 640px) {
       .search-panel {
@@ -1478,158 +1638,166 @@
         padding: 20px;
         margin: 20px;
       }
-      
+
       .search-input-row {
         flex-direction: column;
         gap: 12px;
       }
-      
+
       .search-results {
         max-height: 40vh;
       }
     }
-    
+
     /* Performance optimizations */
-    .popular-card img, .package-card img, .gallery-item img {
+    .popular-card img,
+    .package-card img,
+    .gallery-item img {
       will-change: transform;
       backface-visibility: hidden;
     }
-    
+
     /* Accessibility improvements */
-    .btn:focus, .input-field:focus, .search-btn:focus {
+    .btn:focus,
+    .input-field:focus,
+    .search-btn:focus {
       outline: 2px solid #0ea5a6;
       outline-offset: 2px;
     }
-    
+
     /* Dark mode support (system preference) */
     @media (prefers-color-scheme: dark) {
       .search-overlay {
         background: rgba(0, 0, 0, 0.8);
       }
-      
+
       .search-panel {
         background: #1f2937;
         color: #f9fafb;
       }
     }
-    
+
     /* Reduced motion support */
     @media (prefers-reduced-motion: reduce) {
-      .popular-card, .package-card, .gallery-item,
-      .btn, .input-field {
+
+      .popular-card,
+      .package-card,
+      .gallery-item,
+      .btn,
+      .input-field {
         transition: none;
       }
-      
+
       .scroll-reveal {
         transition: none;
       }
     }
-    
+
     /* Enhanced mobile navigation */
     @media (max-width: 768px) {
       .navbar {
         width: 100%;
         max-width: 320px;
       }
-      
+
       .navbar-list {
         gap: 8px;
       }
-      
+
       .navbar-link {
         padding: 16px 20px;
         font-size: 18px;
       }
     }
-    
+
     /* Enhanced footer responsiveness */
     @media (max-width: 640px) {
       .footer-top .container {
         grid-template-columns: 1fr;
         text-align: center;
       }
-      
+
       .footer-form .form-wrapper {
         flex-direction: column;
         gap: 12px;
       }
-      
+
       .footer-form input {
         width: 100%;
       }
     }
-    
+
     /* Enhanced hero section responsiveness */
     @media (max-width: 768px) {
       .hero-content {
         text-align: center;
         padding: 40px 20px;
       }
-      
+
       .hero-bg-img {
         background-size: cover;
         background-position: center;
       }
-      
+
       .scroll-indicator {
         bottom: 20px;
         font-size: 14px;
       }
     }
-    
+
     /* Enhanced search form responsiveness */
     @media (max-width: 640px) {
       .tour-search-form {
         padding: 20px;
       }
-      
+
       .search-header {
         text-align: center;
         margin-bottom: 24px;
       }
-      
+
       .search-title {
         font-size: 1.5rem;
       }
     }
-    
+
     /* Enhanced package cards responsiveness */
     @media (max-width: 768px) {
       .package-card {
         flex-direction: column;
       }
-      
+
       .card-price {
         position: static;
         margin-top: 20px;
         text-align: center;
       }
-      
+
       .card-meta-list {
         justify-content: center;
         flex-wrap: wrap;
       }
     }
-    
+
     /* Enhanced gallery responsiveness */
     @media (max-width: 640px) {
       .gallery-list {
         gap: 12px;
         padding: 0 16px;
       }
-      
+
       .gallery-item {
         aspect-ratio: 1;
       }
     }
-    
+
     /* Enhanced CTA section responsiveness */
     @media (max-width: 768px) {
       .cta .container {
         text-align: center;
         padding: 40px 20px;
       }
-      
+
       .cta-content {
         margin-bottom: 24px;
       }
@@ -1643,7 +1811,7 @@
       threshold: 0.1,
       rootMargin: '0px 0px -50px 0px'
     };
-    
+
     const scrollObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -1651,36 +1819,36 @@
         }
       });
     }, observerOptions);
-    
+
     // Observe elements for scroll animations
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
       const scrollElements = document.querySelectorAll('.popular-card, .package-card, .gallery-item, .section-title, .section-text');
       scrollElements.forEach(el => {
         el.classList.add('scroll-reveal');
         scrollObserver.observe(el);
       });
-      
+
       // Add loading states to images
       const images = document.querySelectorAll('img[loading="lazy"]');
       images.forEach(img => {
         if (!img.complete) {
           img.parentElement.classList.add('loading-skeleton');
-          img.addEventListener('load', function() {
+          img.addEventListener('load', function () {
             this.parentElement.classList.remove('loading-skeleton');
           });
         }
       });
-      
+
       // Enhanced form validation
       const forms = document.querySelectorAll('form');
       forms.forEach(form => {
         const inputs = form.querySelectorAll('input, textarea, select');
         inputs.forEach(input => {
-          input.addEventListener('blur', function() {
+          input.addEventListener('blur', function () {
             validateField(this);
           });
-          
-          input.addEventListener('input', function() {
+
+          input.addEventListener('input', function () {
             if (this.classList.contains('error')) {
               this.classList.remove('error');
               const errorMsg = this.parentElement.querySelector('.error-message');
@@ -1690,18 +1858,18 @@
         });
       });
     });
-    
+
     // Enhanced field validation
     function validateField(field) {
       const value = field.value.trim();
       let isValid = true;
       let errorMessage = '';
-      
+
       // Remove existing error styling
       field.classList.remove('error');
       const existingError = field.parentElement.querySelector('.error-message');
       if (existingError) existingError.remove();
-      
+
       // Validation rules
       if (field.hasAttribute('required') && !value) {
         isValid = false;
@@ -1713,7 +1881,7 @@
         isValid = false;
         errorMessage = 'Please enter a valid phone number';
       }
-      
+
       // Apply error styling and message
       if (!isValid) {
         field.classList.add('error');
@@ -1723,15 +1891,15 @@
         errorDiv.style.cssText = 'color: #dc2626; font-size: 14px; margin-top: 4px;';
         field.parentElement.appendChild(errorDiv);
       }
-      
+
       return isValid;
     }
-    
+
     // Enhanced search functionality
     let searchTimeout;
     const searchInput = document.getElementById('site-search-input');
     if (searchInput) {
-      searchInput.addEventListener('input', function() {
+      searchInput.addEventListener('input', function () {
         clearTimeout(searchTimeout);
         searchTimeout = setTimeout(() => {
           const query = this.value.trim();
@@ -1743,37 +1911,37 @@
         }, 300);
       });
     }
-    
+
     function performSearch(query) {
       // Enhanced search with better results
       const results = document.getElementById('site-search-results');
       if (!results) return;
-      
+
       // Simulate search results
       const mockResults = [
         { title: 'Beach Holiday Package', type: 'Package', price: '$750', category: 'Beach' },
         { title: 'Dubai Adventure', type: 'Destination', price: '$1200', category: 'City' },
         { title: 'Kyoto Temple Tour', type: 'Destination', price: '$980', category: 'Cultural' },
         { title: 'River Cruise Experience', type: 'Package', price: '$520', category: 'Cruise' }
-      ].filter(item => 
+      ].filter(item =>
         item.title.toLowerCase().includes(query.toLowerCase()) ||
         item.category.toLowerCase().includes(query.toLowerCase())
       );
-      
+
       displaySearchResults(mockResults);
     }
-    
+
     function displaySearchResults(results) {
       const resultsContainer = document.getElementById('site-search-results');
       if (!resultsContainer) return;
-      
+
       resultsContainer.innerHTML = '';
-      
+
       if (results.length === 0) {
         resultsContainer.innerHTML = '<div class="search-result-item"><span>No results found</span></div>';
         return;
       }
-      
+
       results.forEach(result => {
         const resultDiv = document.createElement('div');
         resultDiv.className = 'search-result-item';
@@ -1787,39 +1955,39 @@
         resultsContainer.appendChild(resultDiv);
       });
     }
-    
+
     function handleSearchResult(title) {
       // Handle search result click
       console.log('Search result clicked:', title);
       // You can add navigation logic here
     }
-    
+
     function clearSearchResults() {
       const results = document.getElementById('site-search-results');
       if (results) {
         results.innerHTML = '';
       }
     }
-    
+
     // Enhanced mobile menu
     const mobileMenuBtn = document.querySelector('[data-nav-open-btn]');
     const mobileMenu = document.querySelector('[data-navbar]');
-    
+
     if (mobileMenuBtn && mobileMenu) {
-      mobileMenuBtn.addEventListener('click', function() {
+      mobileMenuBtn.addEventListener('click', function () {
         document.body.style.overflow = 'hidden';
       });
-      
+
       const closeBtn = document.querySelector('[data-nav-close-btn]');
       if (closeBtn) {
-        closeBtn.addEventListener('click', function() {
+        closeBtn.addEventListener('click', function () {
           document.body.style.overflow = '';
         });
       }
     }
-    
+
     // Performance monitoring
-    window.addEventListener('load', function() {
+    window.addEventListener('load', function () {
       // Log performance metrics
       if ('performance' in window) {
         const perfData = performance.getEntriesByType('navigation')[0];
@@ -1832,148 +2000,290 @@
   <style>
     /* Enhanced Responsive Design & Mobile-First Approach */
     @media (max-width: 768px) {
-      .container { padding: 0 16px; }
-      .hero-title { font-size: 2.5rem; line-height: 1.2; }
-      .hero-text { font-size: 1rem; margin-bottom: 24px; }
-      .btn-group { flex-direction: column; gap: 12px; }
-      .btn { width: 100%; }
-      .search-grid { grid-template-columns: 1fr; }
-      .popular-list, .package-list { grid-template-columns: 1fr; }
-      .gallery-list { grid-template-columns: repeat(2, 1fr); gap: 12px; }
-      .hero-stats { flex-direction: column; gap: 16px; }
-      .stat-item { text-align: center; }
-      .navbar { width: 100%; max-width: 320px; }
-      .navbar-list { gap: 8px; }
-      .navbar-link { padding: 16px 20px; font-size: 18px; }
-      .package-card { flex-direction: column; }
-      .card-price { position: static; margin-top: 20px; text-align: center; }
-      .card-meta-list { justify-content: center; flex-wrap: wrap; }
-      .cta .container { text-align: center; padding: 40px 20px; }
-      .cta-content { margin-bottom: 24px; }
-      .hero-content { text-align: center; padding: 40px 20px; }
-      .hero-bg-img { background-size: cover; background-position: center; }
-      .scroll-indicator { bottom: 20px; font-size: 14px; }
-      
+      .container {
+        padding: 0 16px;
+      }
+
+      .hero-title {
+        font-size: 2.5rem;
+        line-height: 1.2;
+      }
+
+      .hero-text {
+        font-size: 1rem;
+        margin-bottom: 24px;
+      }
+
+      .btn-group {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .search-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .popular-list,
+      .package-list {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery-list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+      }
+
+      .hero-stats {
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      .stat-item {
+        text-align: center;
+      }
+
+      .navbar {
+        width: 100%;
+        max-width: 320px;
+      }
+
+      .navbar-list {
+        gap: 8px;
+      }
+
+      .navbar-link {
+        padding: 16px 20px;
+        font-size: 18px;
+      }
+
+      .package-card {
+        flex-direction: column;
+      }
+
+      .card-price {
+        position: static;
+        margin-top: 20px;
+        text-align: center;
+      }
+
+      .card-meta-list {
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .cta .container {
+        text-align: center;
+        padding: 40px 20px;
+      }
+
+      .cta-content {
+        margin-bottom: 24px;
+      }
+
+      .hero-content {
+        text-align: center;
+        padding: 40px 20px;
+      }
+
+      .hero-bg-img {
+        background-size: cover;
+        background-position: center;
+      }
+
+      .scroll-indicator {
+        bottom: 20px;
+        font-size: 14px;
+      }
+
       /* Adventure search section mobile */
       .tour-search {
         margin: 40px 16px;
         padding: 60px 20px;
       }
-      
+
       .tour-search .search-title {
         font-size: 2rem !important;
       }
-      
+
       .tour-search .search-subtitle {
         font-size: 1rem !important;
       }
-      
+
       .tour-search .tour-search-form {
         padding: 30px 20px;
       }
-      
+
       .tour-search .search-grid {
         grid-template-columns: 1fr !important;
         gap: 20px !important;
       }
     }
-    
+
     @media (max-width: 480px) {
-      .hero-title { font-size: 2rem; }
-      .gallery-list { grid-template-columns: 1fr; }
-      .header-bottom .container { flex-direction: column; gap: 16px; }
-      .footer-top .container { grid-template-columns: 1fr; gap: 24px; text-align: center; }
-      .footer-form .form-wrapper { flex-direction: column; gap: 12px; }
-      .footer-form input { width: 100%; }
+      .hero-title {
+        font-size: 2rem;
+      }
+
+      .gallery-list {
+        grid-template-columns: 1fr;
+      }
+
+      .header-bottom .container {
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      .footer-top .container {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        text-align: center;
+      }
+
+      .footer-form .form-wrapper {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .footer-form input {
+        width: 100%;
+      }
     }
-    
+
     @media (max-width: 640px) {
-      .search-panel { width: 95vw; padding: 20px; margin: 20px; }
-      .search-input-row { flex-direction: column; gap: 12px; }
-      .search-results { max-height: 40vh; }
-      .tour-search-form { padding: 20px; }
-      .search-header { text-align: center; margin-bottom: 24px; }
-      .search-title { font-size: 1.5rem; }
-      .gallery-list { gap: 12px; padding: 0 16px; }
-      .gallery-item { aspect-ratio: 1; }
+      .search-panel {
+        width: 95vw;
+        padding: 20px;
+        margin: 20px;
+      }
+
+      .search-input-row {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .search-results {
+        max-height: 40vh;
+      }
+
+      .tour-search-form {
+        padding: 20px;
+      }
+
+      .search-header {
+        text-align: center;
+        margin-bottom: 24px;
+      }
+
+      .search-title {
+        font-size: 1.5rem;
+      }
+
+      .gallery-list {
+        gap: 12px;
+        padding: 0 16px;
+      }
+
+      .gallery-item {
+        aspect-ratio: 1;
+      }
     }
-    
+
     /* Enhanced animations and micro-interactions */
-    .popular-card, .package-card, .gallery-item {
+    .popular-card,
+    .package-card,
+    .gallery-item {
       transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
       will-change: transform, box-shadow;
     }
-    
-    .popular-card:hover, .package-card:hover, .gallery-item:hover {
+
+    .popular-card:hover,
+    .package-card:hover,
+    .gallery-item:hover {
       transform: translateY(-8px) scale(1.02);
       box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
     }
-    
+
     /* Enhanced button interactions */
     .btn {
       position: relative;
       overflow: hidden;
       transition: all 0.3s ease;
     }
-    
+
     .btn:active {
       transform: translateY(2px);
     }
-    
+
     /* Enhanced form interactions */
     .input-field {
       transition: all 0.3s ease;
       border: 2px solid transparent;
     }
-    
+
     .input-field:focus {
       border-color: #0ea5a6;
       box-shadow: 0 0 0 4px rgba(14, 165, 166, 0.1);
       transform: translateY(-2px);
     }
-    
+
     /* Smooth scrolling */
     html {
       scroll-behavior: smooth;
     }
-    
+
     /* Loading states */
     .loading-skeleton {
       background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
       background-size: 200% 100%;
       animation: loading 1.5s infinite;
     }
-    
+
     @keyframes loading {
-      0% { background-position: 200% 0; }
-      100% { background-position: -200% 0; }
+      0% {
+        background-position: 200% 0;
+      }
+
+      100% {
+        background-position: -200% 0;
+      }
     }
-    
+
     /* Accessibility improvements */
-    .btn:focus, .input-field:focus, .search-btn:focus {
+    .btn:focus,
+    .input-field:focus,
+    .search-btn:focus {
       outline: 2px solid #0ea5a6;
       outline-offset: 2px;
     }
-    
+
     /* Dark mode support */
     @media (prefers-color-scheme: dark) {
       .search-overlay {
         background: rgba(0, 0, 0, 0.8);
       }
-      
+
       .search-panel {
         background: #1f2937;
         color: #f9fafb;
       }
     }
-    
+
     /* Reduced motion support */
     @media (prefers-reduced-motion: reduce) {
-      .popular-card, .package-card, .gallery-item,
-      .btn, .input-field {
+
+      .popular-card,
+      .package-card,
+      .gallery-item,
+      .btn,
+      .input-field {
         transition: none;
       }
     }
   </style>
 </body>
+
 </html>
