@@ -99,24 +99,32 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     });
     
-    // Form submission with validation
+    // Form submission with redirect behavior
     searchForm.addEventListener('submit', function(e) {
       e.preventDefault();
-      
-      // Add loading state
+
+      const destinationInput = this.querySelector('#destination');
+      const destinationValue = (destinationInput?.value || '').trim().toLowerCase();
+
+      if (destinationValue) {
+        if (destinationValue.includes('delhi')) {
+          window.location.href = 'destinations.html#delhi';
+        } else {
+          window.location.href = 'destinations.html';
+        }
+        return;
+      }
+
+      // Fallback: keep prior UX if no destination provided
       const submitBtn = this.querySelector('.search-btn');
       const originalText = submitBtn.innerHTML;
       submitBtn.innerHTML = '<ion-icon name="hourglass-outline"></ion-icon> Searching...';
       submitBtn.disabled = true;
-      
-      // Simulate search (replace with actual API call)
       setTimeout(() => {
         submitBtn.innerHTML = originalText;
         submitBtn.disabled = false;
-        
-        // Show success message
         showNotification('Search completed! Check your results below.', 'success');
-      }, 2000);
+      }, 1200);
     });
   }
 });
@@ -204,7 +212,15 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.popular-card').forEach(card => {
       const title = (card.querySelector('.card-title a')?.textContent || '').trim();
       const region = (card.querySelector('.card-subtitle a')?.textContent || '').trim();
-      items.push({ type: 'Destination', title, region, element: card, url: '#destination' });
+      let url = '#destination';
+      if (title) {
+        if (title.toLowerCase() === 'delhi') {
+          url = 'destinations.html#delhi';
+        } else {
+          url = 'destinations.html';
+        }
+      }
+      items.push({ type: 'Destination', title, region, element: card, url });
     });
     // Packages
     document.querySelectorAll('.package-card').forEach(card => {
@@ -235,11 +251,14 @@ document.addEventListener('DOMContentLoaded', function() {
       div.innerHTML = `<div><strong>${m.title}</strong><div class="meta">${m.type}${m.region ? ' • ' + m.region : ''}</div></div><a class="btn btn-primary" href="${m.url}">View</a>`;
       div.addEventListener('click', () => {
         closeSearch();
-        // highlight
-        document.querySelectorAll('.search-highlight').forEach(el => el.classList.remove('search-highlight'));
-        m.element && m.element.classList.add('search-highlight');
-        const section = document.querySelector(m.url);
-        section && section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        if (m.url && m.url.startsWith('#')) {
+          document.querySelectorAll('.search-highlight').forEach(el => el.classList.remove('search-highlight'));
+          m.element && m.element.classList.add('search-highlight');
+          const section = document.querySelector(m.url);
+          section && section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        } else if (m.url) {
+          window.location.href = m.url;
+        }
       });
       results.appendChild(div);
     });
@@ -329,5 +348,17 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       });
     }
+  }
+
+  // Destination card click → open booking (only when booking system is available)
+  if (typeof window.openBookingModal !== 'undefined') {
+    document.querySelectorAll('.popular-card').forEach((card) => {
+      card.addEventListener('click', function(event) {
+        const clickedLink = event.target.closest('a');
+        // If user clicked a link inside the card, prefer booking over navigating
+        if (clickedLink) event.preventDefault();
+        openBookingModal(card);
+      });
+    });
   }
 });

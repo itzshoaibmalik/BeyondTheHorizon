@@ -1018,6 +1018,54 @@ body { background: var(--white); }
 .package .btn { margin-inline: auto; }
 
 
+/* Package sizing consistency */
+.package-card .card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.package-card .card-title {
+  display: -webkit-box;
+  line-clamp: 1;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.package-card .card-text {
+  display: -webkit-box;
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Keep banner heights consistent across cards */
+.package-card .card-banner { height: 220px; }
+
+@media (min-width: 768px) {
+  .package-card .card-banner {
+    min-height: 220px;
+    max-height: 260px;
+  }
+}
+
+/* Prevent meta list from making cards excessively tall */
+.package-card .card-meta-list {
+  max-height: 64px;
+  overflow: hidden;
+}
+
+/* Vertically center price/actions and keep spacing tight */
+.package-card .card-price {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+
 
 
 
@@ -1810,10 +1858,6 @@ html {
 /* Enhanced focus states (removed global outline to avoid rectangles on nav) */
 
 /* Performance optimizations */
-.hero-video-bg video {
-  will-change: transform;
-}
-
 .btn {
   will-change: transform;
 }
